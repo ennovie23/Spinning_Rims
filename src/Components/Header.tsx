@@ -2,12 +2,13 @@ import { Box, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import BrowseButton from "./BrowseButton";
 
 function Header() {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(""); // Tracks the open dropdown
 
-  const handleToggle = () => {
-    setDropdownOpen((prev) => !prev);
+  const toggleMenu = (menu: string) => {
+    setActiveMenu((prevMenu) => (prevMenu === menu ? "" : menu));
   };
 
   return (
@@ -129,8 +130,7 @@ function Header() {
           {/* BIKES Dropdown */}
           <Box
             sx={{ position: "relative" }}
-            
-            onClick={handleToggle} // Toggle dropdown on click
+            onClick={() => toggleMenu("bikes")}
           >
             <Typography
               sx={{
@@ -145,7 +145,7 @@ function Header() {
             </Typography>
 
             {/* Dropdown Menu */}
-            {isDropdownOpen && (
+            {activeMenu === "bikes" && (
               <Box
                 sx={{
                   position: "absolute",
@@ -154,10 +154,11 @@ function Header() {
                   width: "100vw",
                   backgroundColor: "#ffffff",
                   boxShadow: "0px 2px 20px 2px rgba(0,0,0,0.25)",
-                  paddingTop: 5,
-                  paddingBottom: 5,
-                  paddingRight: 15,
-                  paddingLeft: 15,
+                  paddingTop: 3.5,
+                  paddingBottom: 3.5,
+                  paddingRight: 20,
+                  paddingLeft: 20,
+                  columnGap: 1,
                   display: "grid",
                   gridTemplateColumns: "repeat(5, 1fr)",
                   zIndex: 1000,
@@ -251,32 +252,204 @@ function Header() {
                     </Typography>
                   </Box>
                 ))}
+
+                <Box
+                  sx={{
+                    gridColumn: "span 5",
+                    textAlign: "center",
+                    marginTop: 3,
+                  }}
+                >
+                  <BrowseButton />
+                </Box>
               </Box>
             )}
           </Box>
 
-          <Typography
-            sx={{
-              fontFamily: '"Inter", sans-serif',
-              fontSize: 12,
-              cursor: "pointer",
-              color: "black",
-              "&:hover": { color: "red" },
-            }}
+          <Box
+            sx={{ position: "relative" }}
+            onClick={() => toggleMenu("Accessories")}
           >
-            ACCESSORIES
-          </Typography>
-          <Typography
+            <Typography
+              sx={{
+                fontFamily: '"Inter", sans-serif',
+                fontSize: 12,
+                cursor: "pointer",
+                color: "black",
+                "&:hover": { color: "red" },
+              }}
+            >
+              ACCESSORIES
+            </Typography>
+
+            {activeMenu === "Accessories" && (
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: "230%",
+                  left: -718,
+                  width: "100vw",
+                  backgroundColor: "#ffffff",
+                  boxShadow: "0px 2px 20px 2px rgba(0,0,0,0.25)",
+                  paddingTop: 3.5,
+                  paddingBottom: 3.5,
+                  paddingRight: 51,
+                  paddingLeft: 51,
+                  display: "grid",
+                  gridTemplateColumns: "repeat(3, 1fr)",
+                  zIndex: 1000,
+                  columnGap: 1,
+                }}
+              >
+                {["GEARS", "PARTS", "ACCESSORIES"].map((accCategory) => (
+                  <Box key={accCategory}>
+                    <Typography
+                      sx={{
+                        fontSize: 20,
+                        fontFamily: '"Afacad", sans-serif',
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {accCategory}
+                    </Typography>
+                  </Box>
+                ))}
+
+                {[
+                  "GCN Core 2.0",
+                  "Garmin Rally RS 100",
+                  "Garmin Edge 1040 Solar",
+                  "Shimano RC3",
+                  "Black Inc Seat Post",
+                  "Rockbros Q4 Tail Light",
+                  "",
+                  "Rockshox Super Deluxe RCT",
+                  "Rockbros 1000 Lumens",
+                  "",
+                  "Fox Factory 40 Triple Crown",
+                  "",
+                  "",
+                  "ENVE Composite",
+                  "",
+                ].map((acc) => (
+                  <Box key={acc}>
+                    <Typography
+                      sx={{
+                        fontSize: 16,
+                        fontFamily: '"Afacad", sans-serif',
+                        color: "#727272",
+                        cursor: "pointer",
+                        "&:hover": { color: "black" },
+                      }}
+                    >
+                      {acc}
+                    </Typography>
+                  </Box>
+                ))}
+
+                <Box
+                  sx={{
+                    gridColumn: "span 3",
+                    textAlign: "center",
+                    marginTop: 3,
+                  }}
+                >
+                  <BrowseButton />
+                </Box>
+              </Box>
+            )}
+          </Box>
+
+          <Box
             sx={{
-              fontFamily: '"Inter", sans-serif',
-              fontSize: 12,
-              cursor: "pointer",
-              color: "black",
-              "&:hover": { color: "red" },
+              position: "relative",
             }}
+            onClick={() => toggleMenu("about")}
           >
-            ABOUT US
-          </Typography>
+            <Typography
+              sx={{
+                fontFamily: '"Inter", sans-serif',
+                fontSize: 12,
+                cursor: "pointer",
+                color: "black",
+                "&:hover": { color: "red" },
+              }}
+            >
+              ABOUT US
+            </Typography>
+
+            {activeMenu === "about" && (
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: "230%",
+                  left: -872,
+                  width: "100vw",
+                  backgroundColor: "#ffffff",
+                  boxShadow: "0px 2px 20px 2px rgba(0,0,0,0.25)",
+                  paddingTop: 3.5,
+                  paddingBottom: 3.5,
+                  paddingRight: 30,
+                  paddingLeft: 30,
+                  // display: "grid",
+                  // gridTemplateColumns: "repeat(3, 1fr)",
+                  // zIndex: 1000,
+                  // columnGap: 1,
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: 20,
+                    fontFamily: '"Afacad", sans-serif',
+                    fontWeight: "bold",
+                    display: "flex",
+                    justifyContent: "center",
+                    columnGap: 1,
+                  }}
+                >
+                  ABOUT <span style={{ color: "red" }}>SPINNING</span> RIMS
+                </Typography>
+
+                <Box sx={{}}>
+                  <Typography
+                    sx={{
+                      fontSize: 16,
+                      fontFamily: '"Afacad", sans-serif',
+                      fontWeight: "regular",
+                      display: "flex",
+                      justifyContent: "center",
+                      textAlign: "center",
+                      // alignItems: "center",
+                      // alignContent: "center",
+                      // columnSpan: 5,
+                    }}
+                  >
+                    Welcome to Spinning Rims! We are passionate about providing
+                    high-quality bicycles and accessories to our customers.
+                    <br />
+                    With years of experience in the industry, we strive to offer
+                    the best selection of products and excellent customer
+                    service.
+                    <br />
+                    <br />
+                    At Spinning Rims Shop, we believe in promoting a healthy and
+                    active lifestyle through cycling. Whether you're a casual
+                    rider or a seasoned cyclist,
+                    <br />
+                    we have something for everyone. Our team is dedicated to
+                    helping you find the perfect bike and gear to suit your
+                    needs.
+                    <br />
+                    <br />
+                    Thank you for choosing Spinning Rims Shop for all your
+                    cycling needs.
+                    <br />
+                    We look forward to serving you!
+                  </Typography>
+                </Box>
+              </Box>
+            )}
+          </Box>
         </Box>
       </Box>
 
