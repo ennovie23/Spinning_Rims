@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import BrowseButton from "./BrowseButton";
+import Button from "./Button";
 
 function Header() {
   const [activeMenu, setActiveMenu] = useState(""); // Tracks the open dropdown
@@ -13,6 +13,17 @@ function Header() {
 
   return (
     <>
+    <Box
+  sx={{
+    position: "fixed", // Fixes header at the top
+    top: 0,
+    left: 0,
+    width: "100%",
+    backgroundColor: "white",
+    zIndex: 1000, // Ensures it's above other elements
+    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Adds shadow
+  }}
+>
       {/* First Row */}
       <Box
         sx={{
@@ -260,7 +271,7 @@ function Header() {
                     marginTop: 3,
                   }}
                 >
-                  <BrowseButton />
+                  <Button />
                 </Box>
               </Box>
             )}
@@ -354,7 +365,7 @@ function Header() {
                     marginTop: 3,
                   }}
                 >
-                  <BrowseButton />
+                  <Button />
                 </Box>
               </Box>
             )}
@@ -467,6 +478,7 @@ function Header() {
         }}
       >
         Nature’s Best View is From The Saddle
+      </Box>
       </Box>
     </>
   );
