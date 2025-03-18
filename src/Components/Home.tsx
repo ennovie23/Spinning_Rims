@@ -13,6 +13,14 @@ import flight from "./Images/accessories/flight.jpg";
 import flight1 from "./Images/accessories/flight1.jpeg";
 import jer from "./Images/accessories/jer.jpg";
 import jer1 from "./Images/accessories/jer1.jpg";
+import "../App.css";
+import rbbg from "./Images/rb bg.png";
+import mtbbg from "./Images/mtb bg.png";
+import gbbg from "./Images/gb bg.png";
+import ebbg from "./Images/eb bg.png";
+import fsbbg from "./Images/fsb bg.png";
+import BrowseButton from "./Button";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -26,9 +34,7 @@ function Home() {
         <img
           src={coverPhoto}
           alt="Cover Photo"
-          // width="1440"
           height="755"
-          className="cover-photo"
           style={{
             display: "block",
             filter: "brightness(0.75)",
@@ -101,7 +107,7 @@ function Home() {
           image2={cleats1}
         />
 
-         <AccItemDisplayTemplate
+        <AccItemDisplayTemplate
           name="Garmin Edge 1040 Solar"
           price="₱47,080"
           image1={speed}
@@ -113,9 +119,9 @@ function Home() {
           price="₱350"
           image1={rockbros}
           image2={rockbros1}
-        /> 
+        />
 
-         <AccItemDisplayTemplate
+        <AccItemDisplayTemplate
           name="Rockbros 1000 Lumens"
           price="₱1,100"
           image1={flight}
@@ -149,6 +155,189 @@ function Home() {
           SHOP THE BEST BIKE FOR YOU!
         </Typography>
       </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          paddingLeft: 5,
+          paddingRight: 5,
+          marginBottom: 5,
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img src={rbbg} alt="road bike bg" className="smallBgHomepage" />
+
+          <Box
+            sx={{
+              position: "absolute",
+            }}
+          >
+            <Typography
+              sx={{
+                position: "relative",
+                fontFamily: '"Secular-One", sans-serif',
+                fontWeight: "bold",
+                fontSize: 24,
+                color: "white",
+                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                marginBottom: 1,
+              }}
+            >
+              Road Bikes
+            </Typography>
+            <BrowseButton text="SHOP NOW!" size="medium" />
+          </Box>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img src={mtbbg} alt="mt bike bg" className="smallBgHomepage" />
+
+          <Box
+            sx={{
+              position: "absolute",
+            }}
+          >
+            <Typography
+              sx={{
+                position: "relative",
+                fontFamily: '"Secular-One", sans-serif',
+                fontWeight: "bold",
+                fontSize: 24,
+                color: "white",
+                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                marginBottom: 1,
+              }}
+            >
+              Mountain Bikes
+            </Typography>
+            <BrowseButton text="SHOP NOW!" size="medium" />
+          </Box>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img src={gbbg} alt="gravel bike bg" className="smallBgHomepage" />
+
+          <Box
+            sx={{
+              position: "absolute",
+            }}
+          >
+            <Typography
+              sx={{
+                position: "relative",
+                fontFamily: '"Secular-One", sans-serif',
+                fontWeight: "bold",
+                fontSize: 24,
+                color: "white",
+                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                marginBottom: 1,
+              }}
+            >
+              Gravel Bikes
+            </Typography>
+            <BrowseButton text="SHOP NOW!" size="medium" />
+          </Box>
+        </Box>
+      </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          paddingLeft: 5,
+          paddingRight: 5,
+          gap: 5,
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img src={ebbg} alt="e-bike bg" className="smallBgHomepage" />
+
+          <Box
+            sx={{
+              position: "absolute",
+            }}
+          >
+            <Typography
+              sx={{
+                position: "relative",
+                fontFamily: '"Secular-One", sans-serif',
+                fontWeight: "bold",
+                fontSize: 24,
+                color: "white",
+                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                marginBottom: 1,
+              }}
+            >
+              Electric Bikes
+            </Typography>
+            <BrowseButton text="SHOP NOW!" size="medium" />
+          </Box>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src={fsbbg}
+            alt="full suspension bike bg"
+            className="smallBgHomepage"
+          />
+
+          <Box
+            sx={{
+              position: "absolute",
+            }}
+          >
+            <Typography
+              sx={{
+                position: "relative",
+                fontFamily: '"Secular-One", sans-serif',
+                fontWeight: "bold",
+                fontSize: 24,
+                color: "white",
+                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                marginBottom: 1,
+              }}
+            >
+              Full Suspension Bikes
+            </Typography>
+            <BrowseButton text="SHOP NOW!" size="medium" />
+          </Box>
+        </Box>
+      </Box>
+
+      <Footer />
     </Box>
   );
 }

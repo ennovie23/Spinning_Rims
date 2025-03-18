@@ -96,26 +96,16 @@ function Header() {
           alignItems: "center",
         }}
       >
-        {/* Logo */}
         <Typography
-          sx={{
-            color: "red",
-            fontFamily: '"Freeman", sans-serif',
-            fontSize: 36,
-            marginRight: 1,
-          }}
-        >
-          SPINNING
-        </Typography>
-        <Typography
-          sx={{
-            color: "black",
-            fontFamily: '"Freeman", sans-serif',
-            fontSize: 36,
-          }}
-        >
-          RIMS
-        </Typography>
+  sx={{
+    fontFamily: '"Freeman", sans-serif',
+    fontSize: 36,
+  }}
+>
+  <span style={{ color: "red", marginRight: 4 }}>SPINNING</span>
+  RIMS
+</Typography>
+
 
         {/* Navigation */}
         <Box

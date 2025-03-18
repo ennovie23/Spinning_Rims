@@ -1,0 +1,16 @@
+.smallBgHomepage{
+    height: 286px;
+    width: 429px;
+    display: block;
+}
+
+.footerBoldText{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Afacad', sans-serif;
+}
+
+.footerRegText{
+    font-size: 20px;
+    font-family: 'Afacad', sans-serif;
+}
