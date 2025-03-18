@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Button from "./Button";
+import PedalBikeRoundedIcon from '@mui/icons-material/PedalBikeRounded';
 
 function Header() {
   const [activeMenu, setActiveMenu] = useState(""); // Tracks the open dropdown
@@ -461,7 +462,28 @@ function Header() {
               </Box>
             )}
           </Box>
+
         </Box>
+
+        <Box
+  sx={{
+    flexGrow: 5,
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    paddingRight: 5,
+
+  }}
+>
+  <PedalBikeRoundedIcon
+    sx={{
+      fontSize: 50,
+      color: "black",
+      transform: "scaleX(-1)"
+    }}
+  />
+</Box>
+
       </Box>
 
       {/* Third Row */}

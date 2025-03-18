@@ -3,8 +3,16 @@ import Header from "./Header";
 import coverPhoto from "./Images/home-page-bg-photo.jpeg";
 import Button from "./Button";
 import AccItemDisplayTemplate from "./AccItemDisplayTemplate";
-import Image1 from "./Images/accessories/cleats.jpg";
-import Image2 from "./Images/accessories/cleats2.jpg";
+import cleats from "./Images/accessories/cleats.jpg";
+import cleats1 from "./Images/accessories/cleats2.jpg";
+import speed from "./Images/accessories/speed.jpg";
+import speed1 from "./Images/accessories/speed2.jpg";
+import rockbros from "./Images/accessories/rockbros.png";
+import rockbros1 from "./Images/accessories/rockbros1.png";
+import flight from "./Images/accessories/flight.jpg";
+import flight1 from "./Images/accessories/flight1.jpeg";
+import jer from "./Images/accessories/jer.jpg";
+import jer1 from "./Images/accessories/jer1.jpg";
 
 function Home() {
   return (
@@ -89,36 +97,36 @@ function Home() {
         <AccItemDisplayTemplate
           name="Garmin Rally RS 100"
           price="₱39,950"
-          image1={Image1}
-          image2={Image2}
+          image1={cleats}
+          image2={cleats1}
+        />
+
+         <AccItemDisplayTemplate
+          name="Garmin Edge 1040 Solar"
+          price="₱47,080"
+          image1={speed}
+          image2={speed1}
         />
 
         <AccItemDisplayTemplate
-          name="Garmin Rally RS 100"
-          price="₱39,950"
-          image1={Image1}
-          image2={Image2}
+          name="Rockbros Q4"
+          price="₱350"
+          image1={rockbros}
+          image2={rockbros1}
+        /> 
+
+         <AccItemDisplayTemplate
+          name="Rockbros 1000 Lumens"
+          price="₱1,100"
+          image1={flight}
+          image2={flight1}
         />
 
         <AccItemDisplayTemplate
-          name="Garmin Rally RS 100"
-          price="₱39,950"
-          image1={Image1}
-          image2={Image2}
-        />
-
-        <AccItemDisplayTemplate
-          name="Garmin Rally RS 100"
-          price="₱39,950"
-          image1={Image1}
-          image2={Image2}
-        />
-
-        <AccItemDisplayTemplate
-          name="Garmin Rally RS 100"
-          price="₱39,950"
-          image1={Image1}
-          image2={Image2}
+          name="GCN Core 2.0"
+          price="₱5,600"
+          image1={jer}
+          image2={jer1}
         />
       </Box>
 
