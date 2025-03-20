@@ -1,26 +1,27 @@
 import { Box, Typography } from "@mui/material";
-import Header from "./Header";
-import coverPhoto from "./Images/home-page-bg-photo.jpeg";
-import Button from "./Button";
-import AccItemDisplayTemplate from "./AccItemDisplayTemplate";
-import cleats from "./Images/accessories/cleats.jpg";
-import cleats1 from "./Images/accessories/cleats2.jpg";
-import speed from "./Images/accessories/speed.jpg";
-import speed1 from "./Images/accessories/speed2.jpg";
-import rockbros from "./Images/accessories/rockbros.png";
-import rockbros1 from "./Images/accessories/rockbros1.png";
-import flight from "./Images/accessories/flight.jpg";
-import flight1 from "./Images/accessories/flight1.jpeg";
-import jer from "./Images/accessories/jer.jpg";
-import jer1 from "./Images/accessories/jer1.jpg";
 import "../App.css";
-import rbbg from "./Images/rb bg.png";
-import mtbbg from "./Images/mtb bg.png";
-import gbbg from "./Images/gb bg.png";
-import ebbg from "./Images/eb bg.png";
-import fsbbg from "./Images/fsb bg.png";
-import BrowseButton from "./Button";
-import Footer from "./Footer";
+import AccItemDisplayTemplate from "../Components/AccItemDisplayTemplate";
+import Buttons from "../Components/Buttons";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
+import cleats from "../Components/Images/accessories/cleats.jpg";
+import cleats1 from "../Components/Images/accessories/cleats2.jpg";
+import flight from "../Components/Images/accessories/flight.jpg";
+import flight1 from "../Components/Images/accessories/flight1.jpeg";
+import jer from "../Components/Images/accessories/jer.jpg";
+import jer1 from "../Components/Images/accessories/jer1.jpg";
+import rockbros from "../Components/Images/accessories/rockbros.png";
+import rockbros1 from "../Components/Images/accessories/rockbros1.png";
+import speed from "../Components/Images/accessories/speed.jpg";
+import speed1 from "../Components/Images/accessories/speed2.jpg";
+import ebbg from "../Components/Images/eb bg.png";
+import fsbbg from "../Components/Images/fsb bg.png";
+import gbbg from "../Components/Images/gb bg.png";
+import coverPhoto from "../Components/Images/home-page-bg-photo.jpeg";
+import mtbbg from "../Components/Images/mtb bg.png";
+import rbbg from "../Components/Images/rb bg.png";
+import BgPhotoFrame from "../Components/BgPhotoFrame";
+
 
 function Home() {
   return (
@@ -31,15 +32,7 @@ function Home() {
           paddingTop: 17,
         }}
       >
-        <img
-          src={coverPhoto}
-          alt="Cover Photo"
-          height="755"
-          style={{
-            display: "block",
-            filter: "brightness(0.75)",
-          }}
-        />
+        <BgPhotoFrame image={coverPhoto}/>
 
         <Typography
           sx={{
@@ -65,7 +58,8 @@ function Home() {
             transform: "translate(-50%, -50%)",
           }}
         >
-          <Button text="SHOP NOW!" size="large" />
+          <Buttons text="SHOP NOW!" size="large" navigateTo="/MainBikePage" />
+          
         </Box>
       </Box>
 
@@ -136,7 +130,7 @@ function Home() {
         />
       </Box>
 
-      <Box
+      <Box 
         sx={{
           position: "relative",
           display: "flex",
@@ -156,7 +150,7 @@ function Home() {
         </Typography>
       </Box>
 
-      <Box
+      <Box 
         sx={{
           display: "flex",
           flexDirection: "row",
@@ -164,23 +158,16 @@ function Home() {
           paddingLeft: 5,
           paddingRight: 5,
           marginBottom: 5,
-        }}
+        }} 
       >
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Box className="home-page-small-bg" >
           <img src={rbbg} alt="road bike bg" className="smallBgHomepage" />
-
-          <Box
+          <Box 
             sx={{
               position: "absolute",
             }}
           >
-            <Typography
+            <Typography 
               sx={{
                 position: "relative",
                 fontFamily: '"Secular-One", sans-serif',
@@ -193,17 +180,11 @@ function Home() {
             >
               Road Bikes
             </Typography>
-            <BrowseButton text="SHOP NOW!" size="medium" />
+            <Buttons text="SHOP NOW!" size="medium" navigateTo="/RbPage" />
           </Box>
         </Box>
 
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Box className="home-page-small-bg">
           <img src={mtbbg} alt="mt bike bg" className="smallBgHomepage" />
 
           <Box
@@ -224,17 +205,11 @@ function Home() {
             >
               Mountain Bikes
             </Typography>
-            <BrowseButton text="SHOP NOW!" size="medium" />
+            <Buttons text="SHOP NOW!" size="medium" navigateTo="/MtbPage" />
           </Box>
         </Box>
 
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Box className="home-page-small-bg">
           <img src={gbbg} alt="gravel bike bg" className="smallBgHomepage" />
 
           <Box
@@ -255,7 +230,7 @@ function Home() {
             >
               Gravel Bikes
             </Typography>
-            <BrowseButton text="SHOP NOW!" size="medium" />
+            <Buttons text="SHOP NOW!" size="medium" navigateTo="/GbPage"/>
           </Box>
         </Box>
       </Box>
@@ -270,13 +245,7 @@ function Home() {
           gap: 5,
         }}
       >
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Box className="home-page-small-bg">
           <img src={ebbg} alt="e-bike bg" className="smallBgHomepage" />
 
           <Box
@@ -297,17 +266,11 @@ function Home() {
             >
               Electric Bikes
             </Typography>
-            <BrowseButton text="SHOP NOW!" size="medium" />
+            <Buttons text="SHOP NOW!" size="medium" navigateTo="/EbPage" />
           </Box>
         </Box>
 
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Box className="home-page-small-bg">
           <img
             src={fsbbg}
             alt="full suspension bike bg"
@@ -332,11 +295,11 @@ function Home() {
             >
               Full Suspension Bikes
             </Typography>
-            <BrowseButton text="SHOP NOW!" size="medium" />
+            <Buttons text="SHOP NOW!" size="medium" navigateTo="/FsbPage"/>
           </Box>
         </Box>
       </Box>
-
+    
       <Footer />
     </Box>
   );

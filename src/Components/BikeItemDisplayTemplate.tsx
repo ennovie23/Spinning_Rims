@@ -1,23 +1,17 @@
 import { Box, Typography } from "@mui/material";
-import { useState } from "react";
 import Button from "./Buttons";
 
-type AccDisplayBoxProps = {
+type BikeDisplayBoxProps = {
   name?: string;
   price?: string;
-  image1?: string;
-  image2?: string;
-  
+  image?: string;
 };
 
-const AccItemDisplayTemplate = ({
+const BikeItemDisplayTemplate = ({
   name,
   price,
-  image1,
-  image2,
-}: AccDisplayBoxProps) => {
-  const [currentImage, setCurrentImage] = useState(image1); // State to track the displayed image
-
+  image,
+}: BikeDisplayBoxProps) => {
   return (
     <Box
       sx={{
@@ -35,17 +29,7 @@ const AccItemDisplayTemplate = ({
         },
       }}
     >
-      <img
-        src={currentImage} // FIX: Use currentImage instead of image1
-        alt={name}
-        style={{
-          width: 209,
-          height: 209,
-          transition: "opacity 0.3s ease-in-out",
-        }} // Smooth transition effect
-        onMouseEnter={() => image2 && setCurrentImage(image2)} // Change image on hover
-        onMouseLeave={() => image1 && setCurrentImage(image1)} // Revert on hover out
-      />
+      <img src={image} alt={name} style={{ width: 209, height: 209 }} />
 
       <Typography
         sx={{
@@ -89,4 +73,4 @@ const AccItemDisplayTemplate = ({
   );
 };
 
-export default AccItemDisplayTemplate;
+export default BikeItemDisplayTemplate;
