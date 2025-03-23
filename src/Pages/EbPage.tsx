@@ -68,7 +68,7 @@ function EbPage() {
           justifyContent: "space-between",
           position: "relative",
           flexWrap: "wrap",
-          gap: 2,
+          gap: 3,
         }}
       >
         <BikeItemDisplayTemplate

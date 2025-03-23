@@ -5,12 +5,14 @@ type BikeDisplayBoxProps = {
   name?: string;
   price?: string;
   image?: string;
+  navigateTo?: string;
 };
 
 const BikeItemDisplayTemplate = ({
   name,
   price,
   image,
+  navigateTo
 }: BikeDisplayBoxProps) => {
   return (
     <Box
@@ -66,7 +68,7 @@ const BikeItemDisplayTemplate = ({
             top: 267,
           }}
         >
-          <Button text="View" size="small" />
+          <Button text="View" size="small" navigateTo={navigateTo}/>
         </Box>
       </Box>
     </Box>

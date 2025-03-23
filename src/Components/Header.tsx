@@ -5,6 +5,7 @@ import { Box, Typography } from "@mui/material";
 import { useState } from "react";
 import Buttons from "./Buttons";
 import { useNavigate } from "react-router-dom";
+import SignInPage from "../Pages/SignInPage";
 
 function Header() {
   const [activeMenu, setActiveMenu] = useState(""); // Tracks the open dropdown
@@ -42,7 +43,7 @@ function Header() {
             marginRight: 5,
           }}
         >
-          {/* CONTACT US */}
+          {/* CONTACT US
           <Box
             sx={{
               display: "flex",
@@ -62,7 +63,7 @@ function Header() {
             >
               CONTACT US
             </Typography>
-          </Box>
+          </Box> */}
 
           {/* SIGN IN */}
           <Box
@@ -75,17 +76,20 @@ function Header() {
               alignItems: "center",
               fontFamily: '"Inter", sans-serif',
             }}
+            // onClick={() => navigate("/SignInPage")}
           >
             <Typography
-              sx={{
-                cursor: "pointer",
-                fontSize: 12,
-                color: "white",
-                "&:hover": { color: "red" },
-              }}
-            >
-              SIGN IN
-            </Typography>
+  sx={{
+    cursor: "pointer",
+    fontSize: 12,
+    color: "white",
+    "&:hover": { color: "red" },
+  }}
+  onClick={() => navigate("/SignInPage")} // Move onClick here
+>
+  SIGN IN
+</Typography>
+
           </Box>
         </Box>
 
@@ -269,7 +273,6 @@ function Header() {
                       marginTop: 3,
                     }}
                   >
-                    {/* this button */}
                     <Buttons navigateTo="/MainBikePage" />
                   </Box>
                 </Box>
@@ -364,7 +367,7 @@ function Header() {
                       marginTop: 3,
                     }}
                   >
-                    <Buttons/>
+                    <Buttons navigateTo="/AccessoriesPage"/>
                   </Box>
                 </Box>
               )}

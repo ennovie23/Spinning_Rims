@@ -106,13 +106,14 @@ function MainBikePage() {
           justifyContent: "space-between",
           position: "relative",
           flexWrap: "wrap",
-          gap: 2,
+          gap: 3,
         }}
       >
         <BikeItemDisplayTemplate
           name="Giant TCR Advanced 3"
           price="₱83,400"
           image={rb1}
+          // navigateTo="/Home" {example of navigating to its page}
         />
 
         <BikeItemDisplayTemplate

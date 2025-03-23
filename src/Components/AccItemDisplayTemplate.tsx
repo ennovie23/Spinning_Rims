@@ -7,7 +7,7 @@ type AccDisplayBoxProps = {
   price?: string;
   image1?: string;
   image2?: string;
-  
+  navigateTo?: string;
 };
 
 const AccItemDisplayTemplate = ({
@@ -15,6 +15,7 @@ const AccItemDisplayTemplate = ({
   price,
   image1,
   image2,
+  navigateTo,
 }: AccDisplayBoxProps) => {
   const [currentImage, setCurrentImage] = useState(image1); // State to track the displayed image
 
@@ -82,7 +83,7 @@ const AccItemDisplayTemplate = ({
             top: 267,
           }}
         >
-          <Button text="View" size="small" />
+          <Button text="View" size="small" navigateTo={navigateTo}/>
         </Box>
       </Box>
     </Box>
