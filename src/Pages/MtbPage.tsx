@@ -75,12 +75,14 @@ function MtbPage() {
           name="Trek Marlin 5"
           price="₱29,490"
           image={mtb1}
+          navigateTo="/TrekMarlin5"
         />
 
         <BikeItemDisplayTemplate
           name="Trek Marlin 7"
           price="₱47,490"
           image={mtb2}
+          navigateTo="/TrekMarlin7"
         />
 
         <BikeItemDisplayTemplate
