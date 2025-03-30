@@ -22,7 +22,7 @@ const BikeSpecs: React.FC<BikeSpecsProps> = ({ specs }) => {
             {specs.map((category, index) => (
               <React.Fragment key={index}>
                 {/* Category Header Row */}
-                <TableRow>
+                <TableRow sx={{ borderBottom: "2px solid black" }}>
                   <TableCell colSpan={2} sx={{ fontWeight: "bold", fontSize: "1.2rem" }}>
                     {category.title}
                   </TableCell>
@@ -30,8 +30,8 @@ const BikeSpecs: React.FC<BikeSpecsProps> = ({ specs }) => {
 
                 {/* Spec Items */}
                 {category.items.map((item, itemIndex) => (
-                  <TableRow key={itemIndex} sx={{ borderBottom: "2px solid black" }}>
-                    <TableCell sx={{ fontWeight: "bold" }}>{item.name}</TableCell>
+                  <TableRow key={itemIndex} sx={{ borderBottom: "0.5px solid black" }}>
+                    <TableCell sx={{ fontWeight: "bold",  borderRight: "0.5px solid #ddd"}}>{item.name}</TableCell>
                     <TableCell>{item.value}</TableCell>
                   </TableRow>
                 ))}

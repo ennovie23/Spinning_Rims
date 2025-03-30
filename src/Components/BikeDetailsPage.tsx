@@ -92,7 +92,7 @@ const BikeDetailsPage: React.FC<BikeDetailsProps> = ({ name, price, description,
                 style={{
                   width: "90px",
                   height: "80px",
-                  objectFit: "cover",
+                  objectFit: "fill",
                   border: index === currentImage ? "2px solid black" : "2px solid transparent",
                   cursor: "pointer",
                 }}
