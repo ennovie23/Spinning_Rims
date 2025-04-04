@@ -260,6 +260,7 @@ function Header() {
                           cursor: "pointer",
                           "&:hover": { color: "black" },
                         }}
+                        onClick={() => navigate(`/${bike.replace(/\s+/g, '')}`)} // Removes spaces
                       >
                         {bike}
                       </Typography>
@@ -354,6 +355,7 @@ function Header() {
                           cursor: "pointer",
                           "&:hover": { color: "black" },
                         }}
+                        onClick={() => navigate(`/${acc.replace(/\s+/g, '')}`)} // Removes spaces
                       >
                         {acc}
                       </Typography>
