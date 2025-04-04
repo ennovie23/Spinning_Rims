@@ -22,7 +22,6 @@ import mtbbg from "../Components/Images/mtb bg.png";
 import rbbg from "../Components/Images/rb bg.png";
 import BgPhotoFrame from "../Components/BgPhotoFrame";
 
-
 function Home() {
   return (
     <Box>
@@ -32,7 +31,7 @@ function Home() {
           paddingTop: 17,
         }}
       >
-        <BgPhotoFrame image={coverPhoto}/>
+        <BgPhotoFrame image={coverPhoto} />
 
         <Typography
           sx={{
@@ -59,7 +58,6 @@ function Home() {
           }}
         >
           <Buttons text="SHOP NOW!" size="large" navigateTo="/MainBikePage" />
-          
         </Box>
       </Box>
 
@@ -130,7 +128,7 @@ function Home() {
         />
       </Box>
 
-      <Box 
+      <Box
         sx={{
           position: "relative",
           display: "flex",
@@ -144,162 +142,149 @@ function Home() {
             fontSize: 48,
             fontWeight: "bold",
             fontFamily: '"Secular-One", sans-serif',
+            textAlign: "center",
           }}
         >
           SHOP THE BEST BIKE FOR YOU!
         </Typography>
       </Box>
 
-      <Box 
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          paddingLeft: 5,
-          paddingRight: 5,
-          marginBottom: 5,
-        }} 
-      >
-        <Box className="home-page-small-bg" >
-          <img src={rbbg} alt="road bike bg" className="smallBgHomepage" />
-          <Box 
-            sx={{
-              position: "absolute",
-            }}
-          >
-            <Typography 
-              sx={{
-                position: "relative",
-                fontFamily: '"Secular-One", sans-serif',
-                fontWeight: "bold",
-                fontSize: 24,
-                color: "white",
-                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
-                marginBottom: 1,
-              }}
-            >
-              Road Bikes
-            </Typography>
-            <Buttons text="SHOP NOW!" size="medium" navigateTo="/RbPage" />
-          </Box>
-        </Box>
-
-        <Box className="home-page-small-bg">
-          <img src={mtbbg} alt="mt bike bg" className="smallBgHomepage" />
-
-          <Box
-            sx={{
-              position: "absolute",
-            }}
-          >
-            <Typography
-              sx={{
-                position: "relative",
-                fontFamily: '"Secular-One", sans-serif',
-                fontWeight: "bold",
-                fontSize: 24,
-                color: "white",
-                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
-                marginBottom: 1,
-              }}
-            >
-              Mountain Bikes
-            </Typography>
-            <Buttons text="SHOP NOW!" size="medium" navigateTo="/MtbPage" />
-          </Box>
-        </Box>
-
-        <Box className="home-page-small-bg">
-          <img src={gbbg} alt="gravel bike bg" className="smallBgHomepage" />
-
-          <Box
-            sx={{
-              position: "absolute",
-            }}
-          >
-            <Typography
-              sx={{
-                position: "relative",
-                fontFamily: '"Secular-One", sans-serif',
-                fontWeight: "bold",
-                fontSize: 24,
-                color: "white",
-                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
-                marginBottom: 1,
-              }}
-            >
-              Gravel Bikes
-            </Typography>
-            <Buttons text="SHOP NOW!" size="medium" navigateTo="/GbPage"/>
-          </Box>
-        </Box>
-      </Box>
-
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "15px", // Vertical gap between rows
           paddingLeft: 5,
           paddingRight: 5,
-          gap: 5,
+          marginBottom: 5,
         }}
       >
-        <Box className="home-page-small-bg">
-          <img src={ebbg} alt="e-bike bg" className="smallBgHomepage" />
+        {/* First row: Road, MTB, Gravel */}
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "15px", // Horizontal gap between items
+          }}
+        >
+          <Box className="home-page-small-bg">
+            <img src={rbbg} alt="road bike bg" className="smallBgHomepage" />
+            <Box sx={{ position: "absolute" }}>
+              <Typography
+                sx={{
+                  position: "relative",
+                  fontFamily: '"Secular-One", sans-serif',
+                  fontWeight: "bold",
+                  fontSize: 24,
+                  color: "white",
+                  textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                  marginBottom: 1,
+                }}
+              >
+                Road Bikes
+              </Typography>
+              <Buttons text="SHOP NOW!" size="medium" navigateTo="/RbPage" />
+            </Box>
+          </Box>
 
-          <Box
-            sx={{
-              position: "absolute",
-            }}
-          >
-            <Typography
-              sx={{
-                position: "relative",
-                fontFamily: '"Secular-One", sans-serif',
-                fontWeight: "bold",
-                fontSize: 24,
-                color: "white",
-                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
-                marginBottom: 1,
-              }}
-            >
-              Electric Bikes
-            </Typography>
-            <Buttons text="SHOP NOW!" size="medium" navigateTo="/EbPage" />
+          <Box className="home-page-small-bg">
+            <img src={mtbbg} alt="mt bike bg" className="smallBgHomepage" />
+            <Box sx={{ position: "absolute" }}>
+              <Typography
+                sx={{
+                  position: "relative",
+                  fontFamily: '"Secular-One", sans-serif',
+                  fontWeight: "bold",
+                  fontSize: 24,
+                  color: "white",
+                  textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                  marginBottom: 1,
+                }}
+              >
+                Mountain Bikes
+              </Typography>
+              <Buttons text="SHOP NOW!" size="medium" navigateTo="/MtbPage" />
+            </Box>
+          </Box>
+
+          <Box className="home-page-small-bg">
+            <img src={gbbg} alt="gravel bike bg" className="smallBgHomepage" />
+            <Box sx={{ position: "absolute" }}>
+              <Typography
+                sx={{
+                  position: "relative",
+                  fontFamily: '"Secular-One", sans-serif',
+                  fontWeight: "bold",
+                  fontSize: 24,
+                  color: "white",
+                  textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                  marginBottom: 1,
+                }}
+              >
+                Gravel Bikes
+              </Typography>
+              <Buttons text="SHOP NOW!" size="medium" navigateTo="/GbPage" />
+            </Box>
           </Box>
         </Box>
 
-        <Box className="home-page-small-bg">
-          <img
-            src={fsbbg}
-            alt="full suspension bike bg"
-            className="smallBgHomepage"
-          />
+        {/* Second row: Electric & Full Suspension */}
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "15px", // Horizontal gap between items
+          }}
+        >
+          <Box className="home-page-small-bg">
+            <img src={ebbg} alt="e-bike bg" className="smallBgHomepage" />
+            <Box sx={{ position: "absolute" }}>
+              <Typography
+                sx={{
+                  position: "relative",
+                  fontFamily: '"Secular-One", sans-serif',
+                  fontWeight: "bold",
+                  fontSize: 24,
+                  color: "white",
+                  textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                  marginBottom: 1,
+                }}
+              >
+                Electric Bikes
+              </Typography>
+              <Buttons text="SHOP NOW!" size="medium" navigateTo="/EbPage" />
+            </Box>
+          </Box>
 
-          <Box
-            sx={{
-              position: "absolute",
-            }}
-          >
-            <Typography
-              sx={{
-                position: "relative",
-                fontFamily: '"Secular-One", sans-serif',
-                fontWeight: "bold",
-                fontSize: 24,
-                color: "white",
-                textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
-                marginBottom: 1,
-              }}
-            >
-              Full Suspension Bikes
-            </Typography>
-            <Buttons text="SHOP NOW!" size="medium" navigateTo="/FsbPage"/>
+          <Box className="home-page-small-bg">
+            <img
+              src={fsbbg}
+              alt="full suspension bike bg"
+              className="smallBgHomepage"
+            />
+            <Box sx={{ position: "absolute" }}>
+              <Typography
+                sx={{
+                  position: "relative",
+                  fontFamily: '"Secular-One", sans-serif',
+                  fontWeight: "bold",
+                  fontSize: 24,
+                  color: "white",
+                  textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+                  marginBottom: 1,
+                }}
+              >
+                Full Suspension Bikes
+              </Typography>
+              <Buttons text="SHOP NOW!" size="medium" navigateTo="/FsbPage" />
+            </Box>
           </Box>
         </Box>
       </Box>
-    
+
       <Footer />
     </Box>
   );

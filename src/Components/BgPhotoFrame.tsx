@@ -8,7 +8,7 @@ export default function BgPhotoFrame({ image }: BgPhotoFrameProps) {
   return (
     <Box
       sx={{
-        width: 1440,
+        width: "100%",
         height: 780,
         backgroundImage: `url(${image})`,
         backgroundSize: "cover", // Crops or expands the image
