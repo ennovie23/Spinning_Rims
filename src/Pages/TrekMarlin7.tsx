@@ -12,7 +12,7 @@ import Trek7img4 from "../Components/Images/bike/Trek7img4.png";
 function TrekMarlin7() {
   const specs = [
     {
-      title: "Frameset",
+      title: "Pogi Ako",
       items: [
         { name: "Frame", value: "Alpha Silver Aluminum, curved top tube, internal routing, chainstay disc brake mount, rack and kickstand mount, 135x5mm QR" },
         { name: "Fork", value: "RockShox Judy, coil spring, preload, TurnKey lockout" },
