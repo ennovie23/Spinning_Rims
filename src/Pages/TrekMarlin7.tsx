@@ -14,8 +14,8 @@ function TrekMarlin7() {
     {
       title: "Frameset",
       items: [
-        { name: "Frame", value: "Alpha Silver Aluminium, curved top tube, internal routing, 135x5mm QR" },
-        { name: "Fork", value: "SR Suntour XCE 28" },
+        { name: "Frame", value: "Alpha Silver Aluminum, curved top tube, internal routing, chainstay disc brake mount, rack and kickstand mount, 135x5mm QR" },
+        { name: "Fork", value: "RockShox Judy, coil spring, preload, TurnKey lockout" },
       ],
     },
     {
@@ -23,21 +23,29 @@ function TrekMarlin7() {
       items: [
         { name: "Hub Front", value: "Formula DC-20, alloy, 6-bolt, 5x100mm QR" },
         { name: "Hub Rear", value: "Formula DC-27, alloy, 6-bolt, 7sp freehub, 135x5mm QR" },
-        { name: "Tire", value: "Bontrager XR2 Comp, 27.5x2.20, 30 tpi" },
+        { name: "Rims", value: "Bontrager Connection, double-wall, 32-hole, 20mm width, schrader valve" },
+        { name: "Spokes", value: "14g stainless steel, black" },
+        { name: "Tire", value: "Bontrager XR2 Comp, wire bead, 30 tpi, 27.5x2.20'' Connection, double-wall, 32-hole, 20mm width, schrader valve" },
       ],
     },
     {
       title: "Drivetrain",
       items: [
-        { name: "Shifter", value: "Shimano Altus M315, 7x3 speed" },
-        { name: "Crank", value: "Shimano Tourney TY301, 42/34/24, 170mm length" },
+        { name: "Shifter", value: "Shimano Deore M4100, 10 speed" },
+        { name: "Rear Derailleur", value: "Shimano Deore M5120, long cage" },
+        { name: "Crank", value: "FSA Alpha Drive, 28T steel ring, 55mm chainline" },
+        { name: "Bottom Bracket", value: "FSA, 73mm, threaded cartridge, 122.5mm spindle" },
+        { name: "Cassette", value: "Shimano Deore M4100, 11-46, 10 speed" },
+        { name: "Chain", value: "KMC X10, 10 speed" },
+        { name: "Pedal", value: "VP-536 nylon platform" },
       ],
     },
     {
       title: "Component",
       items: [
-        { name: "Shifter", value: "Shimano Altus M315, 7x3 speed" },
-        { name: "Crank", value: "Shimano Tourney TY301, 42/34/24, 170mm length" },
+        { name: "Saddle", value: "Bontrager Arvada, steel rails, 138mm width" },
+        { name: "Seat Post", value: "Bontrager alloy, 31.6mm, 12mm offset, 400mm length" },
+        { name: "Brake Set", value: "Shimano MT200 hydraulic disc RT26 Rotor" },
       ],
     },
   ];

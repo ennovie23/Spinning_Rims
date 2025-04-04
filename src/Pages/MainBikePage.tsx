@@ -180,6 +180,7 @@ function MainBikePage() {
           name="Trek Marlin 7"
           price="₱47,490"
           image={mtb2}
+          navigateTo="/TrekMarlin7"
         />
 
         <BikeItemDisplayTemplate
