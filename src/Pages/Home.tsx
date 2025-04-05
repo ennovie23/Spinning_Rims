@@ -82,16 +82,17 @@ function Home() {
       </Box>
 
       <Box
-        sx={{
-          width: "100%",
-          paddingLeft: 5,
-          paddingRight: 5,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          position: "relative",
-        }}
-      >
+          sx={{
+            width: "100%",
+            paddingLeft: 5,
+            paddingRight: 5,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "30px",
+            marginBottom: 5,
+          }}
+        >
         <AccItemDisplayTemplate
           name="Garmin Rally RS 100"
           price="₱39,950"
