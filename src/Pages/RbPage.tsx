@@ -15,6 +15,7 @@ import rb7 from "../Components/Images/bike/rb7.jpg";
 import rb8 from "../Components/Images/bike/rb8.jpg";
 import rb9 from "../Components/Images/bike/rb9.jpg";
 import BgPhotoFrame from "../Components/BgPhotoFrame";
+
 function RbPage() {
   return (
     <Box>
@@ -24,7 +25,7 @@ function RbPage() {
           paddingTop: 17,
         }}
       >
-        <BgPhotoFrame image={coverPhoto}/>
+        <BgPhotoFrame image={coverPhoto} />
 
         <Typography
           sx={{
@@ -37,44 +38,39 @@ function RbPage() {
             fontSize: 95,
             color: "white",
             textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
-            WebkitTextStroke: "1px black", 
-            
+            WebkitTextStroke: "1px black",
           }}
         >
           Road Bikes
         </Typography>
-
-        <Box
-          sx={{
-            position: "absolute",
-            top: "68%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        ></Box>
       </Box>
 
       <Dropdown />
 
       <Box
         sx={{
-          width: "100%",
-          paddingLeft: 5,
-          paddingRight: 5,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          position: "relative",
-          flexWrap: "wrap",
-          gap: 3,
+          display: "grid",
+          gridTemplateColumns: {
+            xs: "repeat(1, 1fr)",  // 1 item per row for extra small screens
+            sm: "repeat(2, 1fr)",  // 2 items per row for small screens
+            md: "repeat(3, 1fr)",  // 3 items per row for medium screens
+            lg: "repeat(4, 1fr)",  // 4 items per row for large screens
+            xl: "repeat(5, 1fr)",  // 5 items per row for extra large screens
+          },
+          columnGap: 5,  // horizontal spacing
+          rowGap: 4,     // vertical spacing
+          px: 2,         // horizontal padding for container
+          py: 6,         // vertical padding for container
+          maxWidth: "1700px",  // max width for the container
+          margin: "0 auto",    // centering the content
         }}
       >
         <BikeItemDisplayTemplate
           name="Giant TCR Advanced 3"
           price="₱83,400"
           image={rb1}
+          // navigateTo="/Home" {example of navigating to its page}
         />
-
         <BikeItemDisplayTemplate
           name="Giant Propel Advanced Pro"
           price="₱123,000"
@@ -128,10 +124,8 @@ function RbPage() {
           price="₱260,000"
           image={rb10}
         />
-
-
-        
       </Box>
+
       <Footer />
     </Box>
   );

@@ -56,66 +56,62 @@ import rb8 from "../Components/Images/bike/rb8.jpg";
 import rb9 from "../Components/Images/bike/rb9.jpg";
 import BgPhotoFrame from "../Components/BgPhotoFrame";
 
+// all your bike item template components here...
+
 function MainBikePage() {
   return (
     <Box>
       <Header />
-      <Box
-        sx={{
-          paddingTop: 17,
-        }}
-      >
-        <BgPhotoFrame image={coverPhoto}/>
+      <Box sx={{ paddingTop: { xs: 10, md: 17 } }}>
+        <BgPhotoFrame image={coverPhoto} />
 
         <Typography
           sx={{
             position: "absolute",
             top: "103%",
-            left: "11%",
+            left: "15%",
             transform: "translate(-50%, -50%)",
             fontFamily: '"Afacad", sans-serif',
             fontWeight: "bold",
-            fontSize: 96,
+            fontSize: 72,
             color: "white",
-            textShadow: "2px 17px 15px rgba(0,0,0,0.5)",
-            WebkitTextStroke: "1px black", 
+            textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
+            WebkitTextStroke: "1px black",
           }}
         >
           BIKES
         </Typography>
-
-        <Box
-          sx={{
-            position: "absolute",
-            top: "68%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        ></Box>
       </Box>
 
       <Dropdown />
 
       <Box
         sx={{
-          width: "100%",
-          paddingLeft: 5,
-          paddingRight: 5,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          position: "relative",
-          flexWrap: "wrap",
-          gap: 3,
+          display: "grid",
+          gridTemplateColumns: {
+            xs: "repeat(1, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+            lg: "repeat(4, 1fr)",
+            xl: "repeat(5, 1fr)",
+          },
+          columnGap: 10, 
+          rowGap: 3,
+          px: 2,
+          py: 4,
+          maxWidth: "1600px",
+          margin: "0 auto", // <-- centers the grid horizontally
         }}
       >
+
+        {/* Your <BikeItemDisplayTemplate /> components here */}
+
         <BikeItemDisplayTemplate
           name="Giant TCR Advanced 3"
           price="₱83,400"
           image={rb1}
           // navigateTo="/Home" {example of navigating to its page}
         />
-
         <BikeItemDisplayTemplate
           name="Giant Propel Advanced Pro"
           price="₱123,000"
@@ -411,6 +407,7 @@ function MainBikePage() {
           image={fsb10}
         />
       </Box>
+
       <Footer />
     </Box>
   );

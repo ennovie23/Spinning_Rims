@@ -16,7 +16,6 @@ import gb8 from "../Components/Images/bike/gb8.jpg";
 import gb9 from "../Components/Images/bike/gb9.jpg";
 import BgPhotoFrame from "../Components/BgPhotoFrame";
 
-
 function GbPage() {
   return (
     <Box>
@@ -26,8 +25,8 @@ function GbPage() {
           paddingTop: 17,
         }}
       >
-        <BgPhotoFrame image={coverPhoto}/>
-
+        <BgPhotoFrame image={coverPhoto} />
+        
         <Typography
           sx={{
             position: "absolute",
@@ -39,36 +38,31 @@ function GbPage() {
             fontSize: 95,
             color: "white",
             textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
-            WebkitTextStroke: "1px black", 
-            
+            WebkitTextStroke: "1px black",
           }}
         >
           Gravel Bikes
         </Typography>
-
-        <Box
-          sx={{
-            position: "absolute",
-            top: "68%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        ></Box>
       </Box>
 
       <Dropdown />
 
       <Box
         sx={{
-          width: "100%",
-          paddingLeft: 5,
-          paddingRight: 5,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          position: "relative",
-          flexWrap: "wrap",
-          gap: 3,
+          display: "grid",
+          gridTemplateColumns: {
+            xs: "repeat(1, 1fr)",  // 1 item per row for extra small screens
+            sm: "repeat(2, 1fr)",  // 2 items per row for small screens
+            md: "repeat(3, 1fr)",  // 3 items per row for medium screens
+            lg: "repeat(4, 1fr)",  // 4 items per row for large screens
+            xl: "repeat(5, 1fr)",  // 5 items per row for extra large screens
+          },
+          columnGap: 5,  // horizontal spacing
+          rowGap: 4,     // vertical spacing
+          px: 2,         // horizontal padding for container
+          py: 6,         // vertical padding for container
+          maxWidth: "1700px",  // max width for the container
+          margin: "0 auto",    // centering the content
         }}
       >
         <BikeItemDisplayTemplate
@@ -76,64 +70,53 @@ function GbPage() {
           price="₱165,000"
           image={gb1}
         />
-
         <BikeItemDisplayTemplate
           name="Canyon Grail CF SL 7"
           price="₱229,000"
           image={gb2}
         />
-
         <BikeItemDisplayTemplate
           name="Cube Nuroad Race FE"
           price="₱120,000"
           image={gb3}
         />
-
         <BikeItemDisplayTemplate
           name="Cube Nuroad C:62 Pro"
           price="₱250,500"
           image={gb4}
         />
-
         <BikeItemDisplayTemplate
           name="Giant Revolt X Advanced Pro 2"
           price="₱75,000"
           image={gb5}
         />
-
         <BikeItemDisplayTemplate
-          name="Giant Revolt 2 "
+          name="Giant Revolt 2"
           price="₱75,000"
           image={gb6}
         />
-
         <BikeItemDisplayTemplate
           name="Cervelo Aspero"
           price="₱500,000"
           image={gb7}
         />
-
         <BikeItemDisplayTemplate
           name="Cervelo Aspero Rival XPLRS"
           price="₱399,000"
           image={gb8}
         />
-
         <BikeItemDisplayTemplate
           name="Pinarello Grevil F grx810"
           price="₱399,000"
           image={gb9}
         />
-
         <BikeItemDisplayTemplate
           name="S - Works Crux"
           price="₱700,000"
           image={gb10}
         />
-
-
-        
       </Box>
+
       <Footer />
     </Box>
   );

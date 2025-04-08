@@ -25,49 +25,44 @@ function FsbPage() {
           paddingTop: 17,
         }}
       >
-        <BgPhotoFrame image={coverPhoto}/>
+        <BgPhotoFrame image={coverPhoto} />
 
         <Typography
           sx={{
             position: "absolute",
             top: "103%",
-            left: "31%",
+            left: "25%",
             transform: "translate(-50%, -50%)",
             fontFamily: '"Afacad", sans-serif',
             fontWeight: "bold",
-            fontSize: 95,
+            fontSize: 72,
             color: "white",
             textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
-            WebkitTextStroke: "1px black", 
-            
+            WebkitTextStroke: "1px black",
           }}
         >
           Full Suspension Bikes
         </Typography>
-
-        <Box
-          sx={{
-            position: "absolute",
-            top: "68%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        ></Box>
       </Box>
 
       <Dropdown />
 
       <Box
         sx={{
-          width: "100%",
-          paddingLeft: 5,
-          paddingRight: 5,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          position: "relative",
-          flexWrap: "wrap",
-          gap: 3,
+          display: "grid",
+          gridTemplateColumns: {
+            xs: "repeat(1, 1fr)",  // 1 item per row for extra small screens
+            sm: "repeat(2, 1fr)",  // 2 items per row for small screens
+            md: "repeat(3, 1fr)",  // 3 items per row for medium screens
+            lg: "repeat(4, 1fr)",  // 4 items per row for large screens
+            xl: "repeat(5, 1fr)",  // 5 items per row for extra large screens
+          },
+          columnGap: 5,  // horizontal spacing
+          rowGap: 4,     // vertical spacing
+          px: 2,         // horizontal padding for container
+          py: 6,         // vertical padding for container
+          maxWidth: "1700px",  // max width for the container
+          margin: "0 auto",    // centering the content
         }}
       >
         <BikeItemDisplayTemplate
@@ -75,64 +70,53 @@ function FsbPage() {
           price="₱500,000"
           image={fsb1}
         />
-
         <BikeItemDisplayTemplate
           name="Cube AMS"
           price="₱350,000"
           image={fsb2}
         />
-
         <BikeItemDisplayTemplate
           name="Trek Fuel EX 9.8 GX"
           price="₱350,000"
           image={fsb3}
         />
-
         <BikeItemDisplayTemplate
           name="Trek Supercaliber 9.7"
           price="₱400,000"
           image={fsb4}
         />
-
         <BikeItemDisplayTemplate
           name="Santa Cruz Blur CS"
           price="₱400,000"
           image={fsb5}
         />
-
         <BikeItemDisplayTemplate
           name="Santa Cruz Mega Tower 2"
           price="₱380,000"
           image={fsb6}
         />
-
         <BikeItemDisplayTemplate
           name="Scott Genius 910"
           price="₱380,000"
           image={fsb7}
         />
-
         <BikeItemDisplayTemplate
           name="Scott Park 970"
           price="₱180,000"
           image={fsb8}
         />
-
         <BikeItemDisplayTemplate
           name="S - Works Stumpjumper"
           price="₱680,000"
           image={fsb9}
         />
-
         <BikeItemDisplayTemplate
           name="S - Works Ennduro LTD"
           price="₱700,000"
           image={fsb10}
         />
-
-
-        
       </Box>
+
       <Footer />
     </Box>
   );
