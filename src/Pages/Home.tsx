@@ -26,40 +26,38 @@ function Home() {
   return (
     <Box>
       <Header />
-      <Box
-        sx={{
-          paddingTop: 17,
-        }}
-      >
-        <BgPhotoFrame image={coverPhoto} />
+      <Box sx={{ position: "relative" }}>
+  <BgPhotoFrame image={coverPhoto} />
 
-        <Typography
-          sx={{
-            position: "absolute",
-            top: "60%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            fontFamily: '"Secular-One", sans-serif',
-            fontWeight: "bold",
-            fontSize: 43,
-            color: "white",
-            textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
-          }}
-        >
-          SPEED IS A MINDSET
-        </Typography>
+  <Box
+    sx={{
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      textAlign: "center",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: 3,
+    }}
+  >
+    <Typography
+      sx={{
+        fontFamily: '"Secular-One", sans-serif',
+        fontWeight: "bold",
+        fontSize: 43,
+        color: "white",
+        textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+      }}
+    >
+      SPEED IS A MINDSET
+    </Typography>
 
-        <Box
-          sx={{
-            position: "absolute",
-            top: "68%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
-          <Buttons text="SHOP NOW!" size="large" navigateTo="/MainBikePage" />
-        </Box>
-      </Box>
+    <Buttons text="SHOP NOW!" size="large" navigateTo="/MainBikePage" />
+  </Box>
+</Box>
+
 
       <Box
         sx={{

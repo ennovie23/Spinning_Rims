@@ -62,21 +62,23 @@ function MainBikePage() {
   return (
     <Box>
       <Header />
-      <Box sx={{ paddingTop: { xs: 10, md: 17 } }}>
+      <Box sx={{ position: "relative" }}>
         <BgPhotoFrame image={coverPhoto} />
 
         <Typography
           sx={{
-            position: "absolute",
-            top: "103%",
-            left: "15%",
-            transform: "translate(-50%, -50%)",
-            fontFamily: '"Afacad", sans-serif',
-            fontWeight: "bold",
-            fontSize: 72,
-            color: "white",
-            textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
-            WebkitTextStroke: "1px black",
+            position: "absolute", 
+      bottom: "10%",     
+      left: "5%",   
+      marginLeft: 20,     
+      marginBottom: 10,
+      transform: "translate(-50%, 50%)", // Adjust so it aligns well
+      fontFamily: '"Afacad", sans-serif',
+      fontWeight: "bold",
+      fontSize: 95,
+      color: "white",
+      textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
+      WebkitTextStroke: "1px black",
           }}
         >
           BIKES

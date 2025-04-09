@@ -160,23 +160,25 @@ function Header() {
               {/* Dropdown Menu */}
               {activeMenu === "bikes" && (
                 <Box
-                  sx={{
-                    position: "absolute",
-                    top: "230%",
-                    left: -613,
-                    width: "100vw",
-                    backgroundColor: "#ffffff",
-                    boxShadow: "0px 2px 20px 2px rgba(0,0,0,0.25)",
-                    paddingTop: 3.5,
-                    paddingBottom: 3.5,
-                    paddingRight: 20,
-                    paddingLeft: 20,
-                    columnGap: 1,
-                    display: "grid",
-                    gridTemplateColumns: "repeat(5, 1fr)",
-                    zIndex: 1000,
-                  }}
-                >
+                sx={{
+                  position: "fixed",
+                  top: "230%",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  width: "100vw",
+                  backgroundColor: "#ffffff",
+                  boxShadow: "0px 2px 20px 2px rgba(0,0,0,0.25)",
+                  paddingTop: 3.5,
+                  paddingBottom: 3.5,
+                  paddingRight: 20,
+                  paddingLeft: 20,
+                  columnGap: 1,
+                  display: "grid",
+                  gridTemplateColumns: "repeat(5, 1fr)",
+                  zIndex: 1000,
+                }}
+              >
+              
                   {/* Categories */}
                   {[
                     "ROAD BIKES",
@@ -299,10 +301,11 @@ function Header() {
               {activeMenu === "Accessories" && (
                 <Box
                   sx={{
-                    position: "absolute",
-                    top: "230%",
-                    left: -718,
-                    width: "100vw",
+                    position: "fixed",
+                  top: "230%",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  width: "100vw",
                     backgroundColor: "#ffffff",
                     boxShadow: "0px 2px 20px 2px rgba(0,0,0,0.25)",
                     paddingTop: 3.5,
@@ -396,10 +399,11 @@ function Header() {
               {activeMenu === "about" && (
                 <Box
                   sx={{
-                    position: "absolute",
-                    top: "230%",
-                    left: -872,
-                    width: "100vw",
+                    position: "fixed",
+                  top: "230%",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  width: "100vw",
                     backgroundColor: "#ffffff",
                     boxShadow: "0px 2px 20px 2px rgba(0,0,0,0.25)",
                     paddingTop: 3.5,

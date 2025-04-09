@@ -21,29 +21,32 @@ function RbPage() {
     <Box>
       <Header />
       <Box
-        sx={{
-          paddingTop: 17,
-        }}
-      >
-        <BgPhotoFrame image={coverPhoto} />
+  sx={{
+    position: "relative",  
+  }}
+>
+  <BgPhotoFrame image={coverPhoto} />
+  
+  <Typography
+    sx={{
+      position: "absolute", 
+      bottom: "10%",     
+      left: "5%",   
+      marginLeft: 35,     
+      marginBottom: 10,
+      transform: "translate(-50%, 50%)", // Adjust so it aligns well
+      fontFamily: '"Afacad", sans-serif',
+      fontWeight: "bold",
+      fontSize: 95,
+      color: "white",
+      textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
+      WebkitTextStroke: "1px black",
+    }}
+  >
+    Road Bikes
+  </Typography>
+</Box>
 
-        <Typography
-          sx={{
-            position: "absolute",
-            top: "102.5%",
-            left: "17.5%",
-            transform: "translate(-50%, -50%)",
-            fontFamily: '"Afacad", sans-serif',
-            fontWeight: "bold",
-            fontSize: 95,
-            color: "white",
-            textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
-            WebkitTextStroke: "1px black",
-          }}
-        >
-          Road Bikes
-        </Typography>
-      </Box>
 
       <Dropdown />
 

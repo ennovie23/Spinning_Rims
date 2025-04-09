@@ -22,17 +22,19 @@ function MtbPage() {
       <Header />
       <Box
         sx={{
-          paddingTop: 17,
+          position: "relative",
         }}
       >
         <BgPhotoFrame image={coverPhoto} />
         
         <Typography
           sx={{
-            position: "absolute",
-            top: "103%",
-            left: "23%",
-            transform: "translate(-50%, -50%)",
+            position: "absolute", 
+            bottom: "10%",     
+            left: "5%",   
+            marginLeft: 35,     
+            marginBottom: 10,
+            transform: "translate(-50%, 50%)", // Adjust so it aligns well
             fontFamily: '"Afacad", sans-serif',
             fontWeight: "bold",
             fontSize: 95,
