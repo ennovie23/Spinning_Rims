@@ -88,7 +88,7 @@ function AccessoriesPage() {
           price="₱39,950"
           image1={cleats}
           image2={cleats1}
-          // navigateTo="/Home" {example of navigating to its page}
+          navigateTo="/GarminRallyRS100"
         />
 
         <AccItemDisplayTemplate

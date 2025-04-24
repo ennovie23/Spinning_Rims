@@ -10,6 +10,7 @@ import AccessoriesPage from "./Pages/AccessoriesPage";
 import SignInPage from "./Pages/SignInPage";
 import CreateAccPage from "./Pages/CreateAccPage";
 import TrekMarlin7 from "./Pages/TrekMarlin7";
+import GarminRallyRS100 from "./Pages/GarminRallyRS100";
 function App() {
   return (
     <Router>
@@ -26,6 +27,7 @@ function App() {
         <Route path="/SignInPage" element={<SignInPage/>}/>
         <Route path="/CreateAccPage" element={<CreateAccPage/>}/>
         <Route path="/TrekMarlin7" element={<TrekMarlin7 />} />
+        <Route path="/GarminRallyRS100" element={<GarminRallyRS100 />} />
       </Routes>
     </Router>
   );
