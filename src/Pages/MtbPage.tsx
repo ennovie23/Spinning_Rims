@@ -71,7 +71,6 @@ function MtbPage() {
           name="Trek Marlin 5"
           price="₱29,490"
           image={mtb1}
-          navigateTo="/TrekMarlin5"
         />
         <BikeItemDisplayTemplate
           name="Trek Marlin 7"
@@ -83,6 +82,7 @@ function MtbPage() {
           name="Scott Scale 925"
           price="₱45,000"
           image={mtb3}
+          navigateTo="/ScottScale925"
         />
         <BikeItemDisplayTemplate
           name="Scott Scale RC World Cup"

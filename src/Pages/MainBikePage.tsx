@@ -185,6 +185,7 @@ function MainBikePage() {
           name="Scott Scale 925"
           price="₱ 45,000"
           image={mtb3}
+          navigateTo="/ScottScale925"
         />
 
         <BikeItemDisplayTemplate
