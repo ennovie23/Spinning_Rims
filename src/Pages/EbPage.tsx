@@ -67,16 +67,66 @@ function EbPage() {
           margin: "0 auto",
         }}
       >
-        <BikeItemDisplayTemplate name="Trek Rail 9" price="₱500,000" image={eb1} />
-        <BikeItemDisplayTemplate name="Trek Marlin+ 6d" price="₱200,000" image={eb2} />
-        <BikeItemDisplayTemplate name="Trek Powerfly 7" price="₱200,000" image={eb3} />
-        <BikeItemDisplayTemplate name="Cube Kathmandu Hybrid" price="₱350,000" image={eb4} />
-        <BikeItemDisplayTemplate name="Cube Reaction" price="₱200,000" image={eb5} />
-        <BikeItemDisplayTemplate name="Cube Stereo Hybrid" price="₱300,000" image={eb6} />
-        <BikeItemDisplayTemplate name="Scott Contessa eRide" price="₱350,000" image={eb7} />
-        <BikeItemDisplayTemplate name="Scott Strike" price="₱350,000" image={eb8} />
-        <BikeItemDisplayTemplate name="Scott Aspect" price="₱200,000" image={eb9} />
-        <BikeItemDisplayTemplate name="Giant Trance X Advanced e+" price="₱800,000" image={eb10} />
+        <BikeItemDisplayTemplate 
+        name="Trek Rail 9" 
+        price="₱500,000" 
+        image={eb1} 
+        navigateTo="/TrekRail9"
+        />
+        <BikeItemDisplayTemplate 
+        name="Trek Marlin+ 6d" 
+        price="₱200,000" 
+        image={eb2} 
+        navigateTo="/TrekMarlin6d"
+        />
+        <BikeItemDisplayTemplate 
+        name="Trek Powerfly 7" 
+        price="₱200,000" 
+        image={eb3} 
+        navigateTo="/TrekPowerfly7"
+        />
+        <BikeItemDisplayTemplate 
+        name="Cube Kathmandu Hybrid" 
+        price="₱350,000" 
+        image={eb4} 
+        navigateTo="/CubeKath"
+        />
+        <BikeItemDisplayTemplate 
+        name="Cube Reaction" 
+        price="₱200,000" 
+        image={eb5} 
+        navigateTo="/CubeReac"
+        />
+        <BikeItemDisplayTemplate 
+        name="Cube Stereo Hybrid" 
+        price="₱300,000" 
+        image={eb6} 
+        navigateTo="/CubeStereo"
+        />
+        <BikeItemDisplayTemplate 
+        name="Scott Contessa eRide" 
+        price="₱350,000" 
+        image={eb7} 
+        navigateTo="/ScottCont"
+        />
+        <BikeItemDisplayTemplate 
+        name="Scott Strike" 
+        price="₱350,000" 
+        image={eb8} 
+        navigateTo="/ScottStrike"
+        />
+        <BikeItemDisplayTemplate 
+        name="Scott Aspect" 
+        price="₱200,000" 
+        image={eb9} 
+        navigateTo="/ScottAspect"
+        />
+        <BikeItemDisplayTemplate 
+        name="Giant Trance X Advanced e+" 
+        price="₱800,000" 
+        image={eb10} 
+        navigateTo="/GiantTrance"
+        />
       </Box>
 
       <Footer />

@@ -20,6 +20,17 @@ import CannondaleF from "./Pages/CannondaleF";
 import CannondaleScalpel from "./Pages/CannondaleScalpel";
 import SantaCruzHighBall from "./Pages/Santa CruzHighBall";
 import SCC from "./Pages/SCC";
+import TrekRail9 from"./Pages/TrekRail9";
+import TrekMarlin6d from"./Pages/TrekMarlin6d";
+import TrekPowerfly7 from"./Pages/TrekPowerfly7";
+import CubeKath from"./Pages/CubeKath";
+import CubeReac from"./Pages/CubeReac";
+import CubeStereo from "./Pages/CubeStereo";
+import ScottCont from "./Pages/ScottCont";
+import ScottStrike from "./Pages/ScottStrike";
+import ScottAspect from "./Pages/ScottAspect";
+import GiantTrance from "./Pages/GiantTrance";
+
 
 function App() {
   return (
@@ -47,6 +58,19 @@ function App() {
         <Route path="/CannondaleScalpel" element={<CannondaleScalpel />} />
         <Route path="/SantaCruzHighBall" element={<SantaCruzHighBall />} />
         <Route path="/SCC" element={<SCC />} />
+        <Route path="/TrekRail9" element={<TrekRail9 />} />
+        <Route path="/TrekMarlin6d" element={<TrekMarlin6d />} />
+        <Route path="/TrekPowerfly7" element={<TrekPowerfly7 />} />
+        <Route path="/CubeKath" element={<CubeKath />} />
+        <Route path="/CubeReac" element={<CubeReac />} />
+        <Route path="/CubeStereo" element={<CubeStereo />} />
+        <Route path="/ScottCont" element={<ScottCont />} />
+        <Route path="/ScottStrike" element={<ScottStrike />} />
+        <Route path="/ScottAspect" element={<ScottAspect />} />
+        <Route path="/GiantTrance" element={<GiantTrance />} />
+
+
+
 
       </Routes>
     </Router>
