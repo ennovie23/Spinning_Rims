@@ -71,6 +71,7 @@ function MtbPage() {
           name="Trek Marlin 5"
           price="₱29,490"
           image={mtb1}
+          navigateTo="/TrekMarlin5"
         />
         <BikeItemDisplayTemplate
           name="Trek Marlin 7"
@@ -88,36 +89,43 @@ function MtbPage() {
           name="Scott Scale RC World Cup"
           price="₱270,000"
           image={mtb4}
+          navigateTo="/ScottScaleRCWorldCup"
         />
         <BikeItemDisplayTemplate
           name="Cube Aim SLX"
           price="₱42,180"
           image={mtb5}
+          navigateTo="/CubeAimSLX"
         />
         <BikeItemDisplayTemplate
           name="Cube Attention SL"
           price="₱60,420"
           image={mtb6}
+          navigateTo="/CubeAttention"
         />
         <BikeItemDisplayTemplate
           name="Cannondale F - Si Carbon 5"
           price="₱145,000"
           image={mtb7}
+          navigateTo="/CannondaleF"
         />
         <BikeItemDisplayTemplate
           name="Cannondale Scalpel HT Carbon 2"
           price="₱265,400"
           image={mtb8}
+          navigateTo="/CannondaleScalpel"
         />
         <BikeItemDisplayTemplate
           name="Santa Cruz High Ball C R"
           price="₱200,400"
           image={mtb9}
+          navigateTo="/SantaCruzHighBall"
         />
         <BikeItemDisplayTemplate
           name="Santa Cruz Chameleon R MX"
           price="₱200,400"
           image={mtb10}
+          navigateTo="/SCC"
         />
       </Box>
 

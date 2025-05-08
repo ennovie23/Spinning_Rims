@@ -56,7 +56,7 @@ function TrekMarlin7() {
       <BikeDetailsPage
         name="Trek Marlin 7"
         price="₱47,490"
-        description="The Trek Marlin 7 is a high-performance hardtail mountain bike with premium components designed for serious riders."
+        description="Marlin 7 is where race-worthy mountain bikes begin. The smooth, lightweight RockShox fork and upgraded parts make this model the best choice for new riders who want a fast cross country hardtail that will hold its own against our higher-end race bikes."
         images={[mtb1, Trek7img1, Trek7img2, Trek7img3, Trek7img4]}
         colors={["#a7d2f2", "#7be0ce", "#ff9918"]}
         sizes={["27.5", "29"]}
