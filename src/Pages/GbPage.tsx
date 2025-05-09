@@ -71,51 +71,61 @@ function GbPage() {
           name="Canyon Grail 7 SL"
           price="₱165,000"
           image={gb1}
+          navigateTo="/CanyonGrail"
         />
         <BikeItemDisplayTemplate
           name="Canyon Grail CF SL 7"
           price="₱229,000"
           image={gb2}
+          navigateTo="/CanyonGrailCF"
         />
         <BikeItemDisplayTemplate
           name="Cube Nuroad Race FE"
           price="₱120,000"
           image={gb3}
+          navigateTo="/CubeNuroadRace"
         />
         <BikeItemDisplayTemplate
           name="Cube Nuroad C:62 Pro"
           price="₱250,500"
           image={gb4}
+          navigateTo="/CubeNuroadC62"
         />
         <BikeItemDisplayTemplate
           name="Giant Revolt X Advanced Pro 2"
           price="₱75,000"
           image={gb5}
+          navigateTo="/GiantRevolt"
         />
         <BikeItemDisplayTemplate
           name="Giant Revolt 2"
           price="₱75,000"
           image={gb6}
+          navigateTo="/GiantRevolt2"
         />
         <BikeItemDisplayTemplate
           name="Cervelo Aspero"
           price="₱500,000"
           image={gb7}
+          navigateTo="/CerveloAspero"
         />
         <BikeItemDisplayTemplate
           name="Cervelo Aspero Rival XPLRS"
           price="₱399,000"
           image={gb8}
+          navigateTo="/CerveloAsperoRival"
         />
         <BikeItemDisplayTemplate
           name="Pinarello Grevil F grx810"
           price="₱399,000"
           image={gb9}
+          navigateTo="/PinarelloGrevil"
         />
         <BikeItemDisplayTemplate
           name="S - Works Crux"
           price="₱700,000"
           image={gb10}
+          navigateTo="/SworksCrux"
         />
       </Box>
 

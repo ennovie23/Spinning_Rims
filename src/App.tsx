@@ -40,7 +40,16 @@ import PinarelloF5 from "./Pages/PinarelloF5";
 import PinarelloParis from "./Pages/PinarelloParis";
 import CerveloSoloist from "./Pages/CerveloSoloist";
 import CerveloCaledonia from "./Pages/CerveloCaledonia";
-
+import CanyonGrail from "./Pages/CanyonGrail";
+import CanyonGrailCF from "./Pages/CanyonGrailCF";
+import CubeNuroadRace from "./Pages/CubeNuroadRace";
+import CubeNuroadC62 from "./Pages/CubeNuroadC62";
+import GiantRevolt from "./Pages/GiantRevolt";
+import GiantRevolt2 from "./Pages/GiantRevolt2";
+import CerveloAspero from "./Pages/CerveloAspero";
+import CerveloAsperoRival from "./Pages/CerveloAsperoRival";
+import PinarelloGrevil from "./Pages/PinarelloGrevil";
+import SworksCrux from "./Pages/SworksCrux";
 
 function App() {
   return (
@@ -88,8 +97,17 @@ function App() {
         <Route path="/PinarelloParis" element={<PinarelloParis />} />
         <Route path="/CerveloSoloist" element={<CerveloSoloist />} />
         <Route path="/CerveloCaledonia" element={<CerveloCaledonia />} />
-
-
+        <Route path="/CanyonGrail" element={<CanyonGrail />} />
+        <Route path="/CanyonGrailCF" element={<CanyonGrailCF />} />
+        <Route path="/CubeNuroadRace" element={<CubeNuroadRace />} />
+        <Route path="/CubeNuroadC62" element={<CubeNuroadC62 />} />
+        <Route path="/GiantRevolt" element={<GiantRevolt />} />
+        <Route path="/GiantRevolt2" element={<GiantRevolt2 />} />
+        <Route path="/CerveloAspero" element={<CerveloAspero />} />
+        <Route path="/CerveloAsperoRival" element={<CerveloAsperoRival />} />
+        <Route path="/PinarelloGrevil" element={<PinarelloGrevil />} />
+        <Route path="/SworksCrux" element={<SworksCrux />} />
+        
 
       </Routes>
     </Router>
