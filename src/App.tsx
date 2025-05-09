@@ -15,41 +15,41 @@ import GarminRallyRS100 from "./Pages/GarminRallyRS100";
 import ScottScale925 from "./Pages/ScottScale925";
 import ScottScaleRCWorldCup from "./Pages/ScottScaleRCWorldCup";
 import CubeAimSLX from "./Pages/CubeAimSLX";
-import CubeAttention from "./Pages/CubeAttention";
-import CannondaleF from "./Pages/CannondaleF";
-import CannondaleScalpel from "./Pages/CannondaleScalpel";
-import SantaCruzHighBall from "./Pages/Santa CruzHighBall";
-import SCC from "./Pages/SCC";
+import CubeAttention from "./Pages/CubeAttentionSL";
+import CannondaleF from "./Pages/CannondaleF-SiCarbon";
+import CannondaleScalpel from "./Pages/CannondaleScalpelHTCarbon2";
+import SantaCruzHighBall from "./Pages/Santa CruzHighBallCR";
+import SCC from "./Pages/SantaCruzChameleonRMX";
 import TrekRail9 from"./Pages/TrekRail9";
 import TrekMarlin6d from"./Pages/TrekMarlin6d";
 import TrekPowerfly7 from"./Pages/TrekPowerfly7";
-import CubeKath from"./Pages/CubeKath";
-import CubeReac from"./Pages/CubeReac";
-import CubeStereo from "./Pages/CubeStereo";
-import ScottCont from "./Pages/ScottCont";
+import CubeKath from"./Pages/CubeKathmanduHybrid";
+import CubeReac from"./Pages/CubeReaction";
+import CubeStereo from "./Pages/CubeStereoHybrid";
+import ScottCont from "./Pages/ScottContessaeRide";
 import ScottStrike from "./Pages/ScottStrike";
 import ScottAspect from "./Pages/ScottAspect";
-import GiantTrance from "./Pages/GiantTrance";
-import GiantTCR from "./Pages/GiantTCR";
-import GiantPropel from "./Pages/GiantPropel";
-import CanyonAeroad from "./Pages/CanyonAeroad";
-import CanyonUltimate from "./Pages/CanyonUltimate";
-import SworkTarmac from "./Pages/SworkTarmac";
-import SpecializedAllez from "./Pages/SpecializedAllez";
-import PinarelloF5 from "./Pages/PinarelloF5";
-import PinarelloParis from "./Pages/PinarelloParis";
+import GiantTrance from "./Pages/GiantTranceXAdvanced";
+import GiantTCR from "./Pages/GiantTCRAdvanced3";
+import GiantPropel from "./Pages/GiantPropelAdvancedPro";
+import CanyonAeroad from "./Pages/CanyonAeroadCFSLX";
+import CanyonUltimate from "./Pages/CanyonUltimateCFSL";
+import SworkTarmac from "./Pages/S-worksTarmacSL7";
+import SpecializedAllez from "./Pages/SpecializedAllezSprintComp";
+import PinarelloF5 from "./Pages/PinarelloF5105";
+import PinarelloParis from "./Pages/PinarelloParis105";
 import CerveloSoloist from "./Pages/CerveloSoloist";
 import CerveloCaledonia from "./Pages/CerveloCaledonia";
-import CanyonGrail from "./Pages/CanyonGrail";
-import CanyonGrailCF from "./Pages/CanyonGrailCF";
-import CubeNuroadRace from "./Pages/CubeNuroadRace";
-import CubeNuroadC62 from "./Pages/CubeNuroadC62";
-import GiantRevolt from "./Pages/GiantRevolt";
+import CanyonGrail from "./Pages/CanyonGrail7SL";
+import CanyonGrailCF from "./Pages/CanyonGrailCFSL7";
+import CubeNuroadRace from "./Pages/CubeNuroadRaceFE";
+import CubeNuroadC62 from "./Pages/CubeNuroadC62Pro";
+import GiantRevolt from "./Pages/GiantRevoltXAdvancedPro2";
 import GiantRevolt2 from "./Pages/GiantRevolt2";
 import CerveloAspero from "./Pages/CerveloAspero";
-import CerveloAsperoRival from "./Pages/CerveloAsperoRival";
-import PinarelloGrevil from "./Pages/PinarelloGrevil";
-import SworksCrux from "./Pages/SworksCrux";
+import CerveloAsperoRival from "./Pages/CerveloAsperoRivalXPLRS";
+import PinarelloGrevil from "./Pages/PinarelloGrevilFgrx810";
+import SworksCrux from "./Pages/S-worksCrux";
 
 function App() {
   return (
@@ -72,41 +72,41 @@ function App() {
         <Route path="/ScottScale925" element={<ScottScale925 />} />
         <Route path="/ScottScaleRCWorldCup" element={<ScottScaleRCWorldCup />} />
         <Route path="/CubeAimSLX" element={<CubeAimSLX />} />
-        <Route path="/CubeAttention" element={<CubeAttention />} />
-        <Route path="/CannondaleF" element={<CannondaleF />} />
-        <Route path="/CannondaleScalpel" element={<CannondaleScalpel />} />
-        <Route path="/SantaCruzHighBall" element={<SantaCruzHighBall />} />
-        <Route path="/SCC" element={<SCC />} />
+        <Route path="/CubeAttentionSL" element={<CubeAttention />} />
+        <Route path="/CannondaleF-SiCarbon" element={<CannondaleF />} />
+        <Route path="/CannondaleScalpelHTCarbon2" element={<CannondaleScalpel />} />
+        <Route path="/SantaCruzHighBallCR" element={<SantaCruzHighBall />} />
+        <Route path="/SantaCruzChameleonRMX" element={<SCC />} />
         <Route path="/TrekRail9" element={<TrekRail9 />} />
         <Route path="/TrekMarlin6d" element={<TrekMarlin6d />} />
         <Route path="/TrekPowerfly7" element={<TrekPowerfly7 />} />
-        <Route path="/CubeKath" element={<CubeKath />} />
-        <Route path="/CubeReac" element={<CubeReac />} />
-        <Route path="/CubeStereo" element={<CubeStereo />} />
-        <Route path="/ScottCont" element={<ScottCont />} />
+        <Route path="/CubeKathmanduHybrid" element={<CubeKath />} />
+        <Route path="/CubeReaction" element={<CubeReac />} />
+        <Route path="/CubeStereoHybrid" element={<CubeStereo />} />
+        <Route path="/ScottContessaeRide" element={<ScottCont />} />
         <Route path="/ScottStrike" element={<ScottStrike />} />
         <Route path="/ScottAspect" element={<ScottAspect />} />
-        <Route path="/GiantTrance" element={<GiantTrance />} />
-        <Route path="/GiantTCR" element={<GiantTCR />} />
-        <Route path="/GiantPropel" element={<GiantPropel />} />
-        <Route path="/CanyonAeroad" element={<CanyonAeroad />} />
-        <Route path="/CanyonUltimate" element={<CanyonUltimate />} />
-        <Route path="/SworkTarmac" element={<SworkTarmac />} />
-        <Route path="/SpecializedAllez" element={<SpecializedAllez />} /> 
-        <Route path="/PinarelloF5" element={<PinarelloF5 />} />
-        <Route path="/PinarelloParis" element={<PinarelloParis />} />
+        <Route path="/GiantTranceXAdvanced" element={<GiantTrance />} />
+        <Route path="/GiantTCRAdvanced3" element={<GiantTCR />} />
+        <Route path="/GiantPropelAdvancedPro" element={<GiantPropel />} />
+        <Route path="/CanyonAeroadCFSLX" element={<CanyonAeroad />} />
+        <Route path="/CanyonUltimateCFSL" element={<CanyonUltimate />} />
+        <Route path="/S-workstarmacSL7" element={<SworkTarmac />} />
+        <Route path="/SpecializedAllezSprintComp" element={<SpecializedAllez />} /> 
+        <Route path="/PinarelloF5105" element={<PinarelloF5 />} />
+        <Route path="/PinarelloParis105" element={<PinarelloParis />} />
         <Route path="/CerveloSoloist" element={<CerveloSoloist />} />
         <Route path="/CerveloCaledonia" element={<CerveloCaledonia />} />
-        <Route path="/CanyonGrail" element={<CanyonGrail />} />
-        <Route path="/CanyonGrailCF" element={<CanyonGrailCF />} />
-        <Route path="/CubeNuroadRace" element={<CubeNuroadRace />} />
-        <Route path="/CubeNuroadC62" element={<CubeNuroadC62 />} />
-        <Route path="/GiantRevolt" element={<GiantRevolt />} />
+        <Route path="/CanyonGrail7SL" element={<CanyonGrail />} />
+        <Route path="/CanyonGrailCFSL7" element={<CanyonGrailCF />} />
+        <Route path="/CubeNuroadRaceFE" element={<CubeNuroadRace />} />
+        <Route path="/CubeNuroadC62Pro" element={<CubeNuroadC62 />} />
+        <Route path="/GiantRevoltXAdvancedPro2" element={<GiantRevolt />} />
         <Route path="/GiantRevolt2" element={<GiantRevolt2 />} />
         <Route path="/CerveloAspero" element={<CerveloAspero />} />
-        <Route path="/CerveloAsperoRival" element={<CerveloAsperoRival />} />
-        <Route path="/PinarelloGrevil" element={<PinarelloGrevil />} />
-        <Route path="/SworksCrux" element={<SworksCrux />} />
+        <Route path="/CerveloAsperoRivalXPLRS" element={<CerveloAsperoRival />} />
+        <Route path="/PinarelloGrevilFgrx810" element={<PinarelloGrevil />} />
+        <Route path="/S-worksCrux" element={<SworksCrux />} />
         
 
       </Routes>

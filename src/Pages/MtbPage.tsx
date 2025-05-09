@@ -101,31 +101,31 @@ function MtbPage() {
           name="Cube Attention SL"
           price="₱60,420"
           image={mtb6}
-          navigateTo="/CubeAttention"
+          navigateTo="/CubeAttentionSL"
         />
         <BikeItemDisplayTemplate
           name="Cannondale F - Si Carbon 5"
           price="₱145,000"
           image={mtb7}
-          navigateTo="/CannondaleF"
+          navigateTo="/CannondaleF-SiCarbon"
         />
         <BikeItemDisplayTemplate
           name="Cannondale Scalpel HT Carbon 2"
           price="₱265,400"
           image={mtb8}
-          navigateTo="/CannondaleScalpel"
+          navigateTo="/CannondaleScalpelHTCarbon2"
         />
         <BikeItemDisplayTemplate
           name="Santa Cruz High Ball C R"
           price="₱200,400"
           image={mtb9}
-          navigateTo="/SantaCruzHighBall"
+          navigateTo="/SantaCruzHighBallCR"
         />
         <BikeItemDisplayTemplate
           name="Santa Cruz Chameleon R MX"
           price="₱200,400"
           image={mtb10}
-          navigateTo="/SCC"
+          navigateTo="/SantaCruzChameleonRMX"
         />
       </Box>
 

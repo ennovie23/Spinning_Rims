@@ -89,25 +89,25 @@ function EbPage() {
         name="Cube Kathmandu Hybrid" 
         price="₱350,000" 
         image={eb4} 
-        navigateTo="/CubeKath"
+        navigateTo="/CubeKathmanduHybrid"
         />
         <BikeItemDisplayTemplate 
         name="Cube Reaction" 
         price="₱200,000" 
         image={eb5} 
-        navigateTo="/CubeReac"
+        navigateTo="/CubeReaction"
         />
         <BikeItemDisplayTemplate 
         name="Cube Stereo Hybrid" 
         price="₱300,000" 
         image={eb6} 
-        navigateTo="/CubeStereo"
+        navigateTo="/CubeStereoHybrid"
         />
         <BikeItemDisplayTemplate 
         name="Scott Contessa eRide" 
         price="₱350,000" 
         image={eb7} 
-        navigateTo="/ScottCont"
+        navigateTo="/ScottContessaeRide"
         />
         <BikeItemDisplayTemplate 
         name="Scott Strike" 
@@ -125,7 +125,7 @@ function EbPage() {
         name="Giant Trance X Advanced e+" 
         price="₱800,000" 
         image={eb10} 
-        navigateTo="/GiantTrance"
+        navigateTo="/GiantTranceXAdvanced"
         />
       </Box>
 
