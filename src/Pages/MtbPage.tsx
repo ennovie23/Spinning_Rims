@@ -4,7 +4,7 @@ import Dropdown from "../Components/Dropdown";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import coverPhoto from "../Components/Images/mtb-page-bg-photo.jpg";
-import mtb1 from "../Components/Images/bike/mtb1.jpg";
+import mtb1 from "../Components/Images/bike/Trek5img0.png";
 import mtb10 from "../Components/Images/bike/mtb10.jpg";
 import mtb2 from "../Components/Images/bike/mtb2.jpg";
 import mtb3 from "../Components/Images/bike/mtb3.jpg";

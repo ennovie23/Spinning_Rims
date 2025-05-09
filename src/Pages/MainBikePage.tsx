@@ -34,7 +34,7 @@ import gb6 from "../Components/Images/bike/gb6.jpg";
 import gb7 from "../Components/Images/bike/gb7.jpg";
 import gb8 from "../Components/Images/bike/gb8.jpg";
 import gb9 from "../Components/Images/bike/gb9.jpg";
-import mtb1 from "../Components/Images/bike/mtb1.jpg";
+import mtb1 from "../Components/Images/bike/Trek5img0.png";
 import mtb10 from "../Components/Images/bike/mtb10.jpg";
 import mtb2 from "../Components/Images/bike/mtb2.jpg";
 import mtb3 from "../Components/Images/bike/mtb3.jpg";
