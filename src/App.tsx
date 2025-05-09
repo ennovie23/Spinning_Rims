@@ -30,6 +30,16 @@ import ScottCont from "./Pages/ScottCont";
 import ScottStrike from "./Pages/ScottStrike";
 import ScottAspect from "./Pages/ScottAspect";
 import GiantTrance from "./Pages/GiantTrance";
+import GiantTCR from "./Pages/GiantTCR";
+import GiantPropel from "./Pages/GiantPropel";
+import CanyonAeroad from "./Pages/CanyonAeroad";
+import CanyonUltimate from "./Pages/CanyonUltimate";
+import SworkTarmac from "./Pages/SworkTarmac";
+import SpecializedAllez from "./Pages/SpecializedAllez";
+import PinarelloF5 from "./Pages/PinarelloF5";
+import PinarelloParis from "./Pages/PinarelloParis";
+import CerveloSoloist from "./Pages/CerveloSoloist";
+import CerveloCaledonia from "./Pages/CerveloCaledonia";
 
 
 function App() {
@@ -68,7 +78,16 @@ function App() {
         <Route path="/ScottStrike" element={<ScottStrike />} />
         <Route path="/ScottAspect" element={<ScottAspect />} />
         <Route path="/GiantTrance" element={<GiantTrance />} />
-
+        <Route path="/GiantTCR" element={<GiantTCR />} />
+        <Route path="/GiantPropel" element={<GiantPropel />} />
+        <Route path="/CanyonAeroad" element={<CanyonAeroad />} />
+        <Route path="/CanyonUltimate" element={<CanyonUltimate />} />
+        <Route path="/SworkTarmac" element={<SworkTarmac />} />
+        <Route path="/SpecializedAllez" element={<SpecializedAllez />} /> 
+        <Route path="/PinarelloF5" element={<PinarelloF5 />} />
+        <Route path="/PinarelloParis" element={<PinarelloParis />} />
+        <Route path="/CerveloSoloist" element={<CerveloSoloist />} />
+        <Route path="/CerveloCaledonia" element={<CerveloCaledonia />} />
 
 
 

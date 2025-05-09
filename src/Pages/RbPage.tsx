@@ -72,60 +72,70 @@ function RbPage() {
           name="Giant TCR Advanced 3"
           price="₱83,400"
           image={rb1}
+          navigateTo="/GiantTCR"
           // navigateTo="/Home" {example of navigating to its page}
         />
         <BikeItemDisplayTemplate
           name="Giant Propel Advanced Pro"
           price="₱123,000"
           image={rb2}
+          navigateTo="/GiantPropel"
         />
 
         <BikeItemDisplayTemplate
           name="Canyon Aeroad CF SLX"
           price="₱326,550"
           image={rb3}
+          navigateTo="/CanyonAeroad"
         />
 
         <BikeItemDisplayTemplate
           name="Canyon Ultimate CF SL"
           price="₱192,450"
           image={rb4}
+          navigateTo="/CanyonUltimate"
         />
 
         <BikeItemDisplayTemplate
           name="S - Works Tarmac SL7"
           price="₱235,000"
           image={rb5}
+          navigateTo="/SworkTarmac"
         />
 
         <BikeItemDisplayTemplate
           name="Specialized Allez Sprint Comp"
           price="₱113,480"
           image={rb6}
+          navigateTo="/SpecializedAllez"
         />
 
         <BikeItemDisplayTemplate
           name="Pinarello F5 105"
           price="₱355,750"
           image={rb7}
+          navigateTo="/PinarelloF5"
         />
 
         <BikeItemDisplayTemplate
           name="Pinarello Paris 105"
           price="₱320,600"
           image={rb8}
+          navigateTo="/PinarelloParis"
         />
 
         <BikeItemDisplayTemplate
           name="Cervelo Soloist"
           price="₱290,000"
           image={rb9}
+          navigateTo="/CerveloSoloist"
         />
 
         <BikeItemDisplayTemplate
           name="Cervelo Caledonia"
           price="₱260,000"
           image={rb10}
+          navigateTo="/CerveloCaledonia"
         />
       </Box>
 
