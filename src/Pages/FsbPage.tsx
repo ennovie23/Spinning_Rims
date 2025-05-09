@@ -71,51 +71,61 @@ function FsbPage() {
           name="Cube Stereo HPC"
           price="₱500,000"
           image={fsb1}
+          navigateTo="/CubeStereoHPC"
         />
         <BikeItemDisplayTemplate
           name="Cube AMS"
           price="₱350,000"
           image={fsb2}
+          navigateTo="/CubeAMS"
         />
         <BikeItemDisplayTemplate
           name="Trek Fuel EX 9.8 GX"
           price="₱350,000"
           image={fsb3}
+          navigateTo="/TrekFuelEX9.8GX"
         />
         <BikeItemDisplayTemplate
           name="Trek Supercaliber 9.7"
           price="₱400,000"
           image={fsb4}
+          navigateTo="/TrekSupercaliber9.7"
         />
         <BikeItemDisplayTemplate
           name="Santa Cruz Blur CS"
           price="₱400,000"
           image={fsb5}
+          navigateTo="/SantaCruzBlurCS"
         />
         <BikeItemDisplayTemplate
           name="Santa Cruz Mega Tower 2"
           price="₱380,000"
           image={fsb6}
+          navigateTo="/SantaCruzMegaTower2"
         />
         <BikeItemDisplayTemplate
           name="Scott Genius 910"
           price="₱380,000"
           image={fsb7}
+          navigateTo="/ScottGenius910"
         />
         <BikeItemDisplayTemplate
-          name="Scott Park 970"
+          name="Scott Spark 970"
           price="₱180,000"
           image={fsb8}
+          navigateTo="/ScottSpark970"
         />
         <BikeItemDisplayTemplate
           name="S - Works Stumpjumper"
           price="₱680,000"
           image={fsb9}
+          navigateTo="/S-WorksStumpjumper"
         />
         <BikeItemDisplayTemplate
           name="S - Works Ennduro LTD"
           price="₱700,000"
           image={fsb10}
+          navigateTo="/S-WorksEnduroLTD"
         />
       </Box>
 

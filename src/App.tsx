@@ -50,6 +50,16 @@ import CerveloAspero from "./Pages/CerveloAspero";
 import CerveloAsperoRival from "./Pages/CerveloAsperoRivalXPLRS";
 import PinarelloGrevil from "./Pages/PinarelloGrevilFgrx810";
 import SworksCrux from "./Pages/S-worksCrux";
+import CubeStereoHPC from "./Pages/CubeStereoHPC";
+import CubeAMS from "./Pages/CubeAMS";
+import TrekFuel from "./Pages/TrekFuelEX9.8GX"
+import TrekSupercaliber from "./Pages/TrekSupercaliber9.7"
+import SantaCruzBlur from "./Pages/SantaCruzBlurCS";
+import SantaCruzMega from "./Pages/SantaCruzMegaTower2";
+import ScottGenius from "./Pages/ScottGenius910";
+import ScottSpark970 from "./Pages/ScottSpark970";
+import SWorksStump from "./Pages/S-WorksStumpjumper";
+import SWorksEnduro from "./Pages/S-WorksEnduroLTD";
 
 function App() {
   return (
@@ -107,7 +117,16 @@ function App() {
         <Route path="/CerveloAsperoRivalXPLRS" element={<CerveloAsperoRival />} />
         <Route path="/PinarelloGrevilFgrx810" element={<PinarelloGrevil />} />
         <Route path="/S-worksCrux" element={<SworksCrux />} />
-        
+        <Route path="/CubeStereoHPC" element={<CubeStereoHPC />} />
+        <Route path="/CubeAMS" element={<CubeAMS />} />
+        <Route path="/TrekFuelEX9.8GX" element={<TrekFuel  />} />
+        <Route path="/TrekSupercaliber9.7" element={<TrekSupercaliber  />} />
+        <Route path="/SantaCruzBlurCS" element={<SantaCruzBlur  />} />
+        <Route path="/SantaCruzMegaTower2" element={<SantaCruzMega  />} />
+        <Route path="/ScottGenius910" element={<ScottGenius  />} />
+        <Route path="/ScottSpark970" element={<ScottSpark970  />} />
+        <Route path="/S-WorksStumpjumper" element={<SWorksStump  />} />
+        <Route path="/S-WorksEnduroLTD" element={<SWorksEnduro  />} />
 
       </Routes>
     </Router>
