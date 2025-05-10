@@ -69,7 +69,7 @@ export default function SignInPage(){
                         justifyContent: 'left',
                         marginTop: 4
                     }}>
-                    <Buttons text="SIGN IN" />
+                    <Buttons text="SIGN IN" navigateTo="/Home" />
                     </Box>
                 </Box>
 
