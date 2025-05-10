@@ -69,9 +69,12 @@ import RCT from "./Pages/RockShoxRearCoilSuperDeluxeRCT";
 import FOX from "./Pages/FoxFactory40TripleCrown";
 import RC from "./Pages/ShimanoRC3";
 import SP from "./Pages/BlackIncSeatpost";
+import { useEffect } from "react";
 
 function App() {
-  alert("3 out of 5 members from our group contributed to this project.\n\nContributors:\n- Evangelista, Ennovie\n- Uy, Felix Martin\n- Chua, Kenjie");
+  useEffect(() => {
+    alert("3 out of 5 members from our group contributed to this project.\n\nContributors:\n- Evangelista, Ennovie\n- Uy, Felix Martin\n- Chua, Kenjie");
+  }, []);
   return (
     <Router>
       <Routes>
