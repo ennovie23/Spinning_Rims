@@ -337,8 +337,8 @@ function Header() {
                     "Garmin Rally RS 100",
                     "Garmin Edge 1040 Solar",
                     "Shimano RC3",
-                    "Black Inc Seat Post",
-                    "Rockbros Q4 Tail Light",
+                    "Black Inc Seatpost",
+                    "Rockbros Q4",
                     "",
                     "Rockshox Super Deluxe RCT",
                     "Rockbros 1000 Lumens",
@@ -346,7 +346,7 @@ function Header() {
                     "Fox Factory 40 Triple Crown",
                     "",
                     "",
-                    "ENVE Composite",
+                    "ENVE Composite Bar Tape",
                     "",
                   ].map((acc) => (
                     <Box key={acc}>

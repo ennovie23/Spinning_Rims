@@ -20,27 +20,20 @@ function FsbPage() {
   return (
     <Box>
       <Header />
-      <Box
-        sx={{
-          position: "relative",
-        }}
-      >
-        <BgPhotoFrame image={coverPhoto} />
 
+      <Box position="relative">
+        <BgPhotoFrame image={coverPhoto} />
         <Typography
           sx={{
-            position: "absolute", 
-      bottom: "10%",     
-      left: "5%",   
-      marginLeft: 35,     
-      marginBottom: 10,
-      transform: "translate(-50%, 50%)", // Adjust so it aligns well
-      fontFamily: '"Afacad", sans-serif',
-      fontWeight: "bold",
-      fontSize: 95,
-      color: "white",
-      textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
-      WebkitTextStroke: "1px black",
+            position: "absolute",
+            bottom: "10%",
+            left: "5%",
+            fontFamily: '"Afacad", sans-serif',
+            fontWeight: "bold",
+            fontSize: { xs: 40, sm: 60, md: 80, lg: 95 },
+            color: "white",
+            textShadow: "2px 17px 10px rgba(0,0,0,0.5)",
+            WebkitTextStroke: "1px black",
           }}
         >
           Full Suspension Bikes
@@ -53,18 +46,18 @@ function FsbPage() {
         sx={{
           display: "grid",
           gridTemplateColumns: {
-            xs: "repeat(1, 1fr)",  // 1 item per row for extra small screens
-            sm: "repeat(2, 1fr)",  // 2 items per row for small screens
-            md: "repeat(3, 1fr)",  // 3 items per row for medium screens
-            lg: "repeat(4, 1fr)",  // 4 items per row for large screens
-            xl: "repeat(5, 1fr)",  // 5 items per row for extra large screens
+            xs: "repeat(1, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+            lg: "repeat(4, 1fr)",
+            xl: "repeat(5, 1fr)",
           },
-          columnGap: 5,  // horizontal spacing
-          rowGap: 4,     // vertical spacing
-          px: 2,         // horizontal padding for container
-          py: 6,         // vertical padding for container
-          maxWidth: "1700px",  // max width for the container
-          margin: "0 auto",    // centering the content
+          columnGap: 5,
+          rowGap: 4,
+          px: 2,
+          py: 6,
+          maxWidth: "1700px",
+          margin: "0 auto",
         }}
       >
         <BikeItemDisplayTemplate
@@ -122,7 +115,7 @@ function FsbPage() {
           navigateTo="/S-WorksStumpjumper"
         />
         <BikeItemDisplayTemplate
-          name="S - Works Ennduro LTD"
+          name="S - Works Enduro LTD"
           price="₱700,000"
           image={fsb10}
           navigateTo="/S-WorksEnduroLTD"

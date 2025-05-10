@@ -13,12 +13,21 @@ import jer from "../Components/Images/accessories/jer.jpg";
 import jer1 from "../Components/Images/accessories/jer1.jpg";
 import rockbros from "../Components/Images/accessories/rockbros.png";
 import rockbros1 from "../Components/Images/accessories/rockbros1.png";
+import rockbros2 from "../Components/Images/accessories/rockbros2.jpg";
+import rockbros3 from "../Components/Images/accessories/rockbros3.jpg";
+import rockbros4 from "../Components/Images/accessories/rockbros4.jpg";
 import speed from "../Components/Images/accessories/speed.jpg";
-import speed1 from "../Components/Images/accessories/speed2.jpg";
+import speed1 from "../Components/Images/accessories/speed1.jpg";
+import speed2 from "../Components/Images/accessories/speed2.jpg";
 import bt from "../Components/Images/accessories/bt.jpg";
 import bt1 from "../Components/Images/accessories/bt1.jpg";
+import rs from "../Components/Images/accessories/rs.jpg";
+import rs1 from "../Components/Images/accessories/rs1.jpg";
+import fox from "../Components/Images/accessories/fox.jpg";
+import fox1 from "../Components/Images/accessories/fox1.jpg";
 
-function GarminRallyRS100() {
+
+function Q4() {
   return (
     <Box mt={1} mb={1}>
       <Header />
@@ -26,17 +35,20 @@ function GarminRallyRS100() {
       {/* Main content with margin */}
       <Box maxWidth="1500px" mx="auto" px={2}>
         <AccessoriesDetailsPage
-          name="Garmin Rally RS 100"
-          price="₱39,950"
-          description="Rally RS100 is tested to the extreme, so you can ride there too. This single-sensing power meter delivers reliable power measurements and is easy to transfer between bikes no matter what bike you’re on or where you’re riding. Compatible with shimano SPD-SL cleats"
-          images={[cleats, cleats1, cleats2]}
+          name="Rockbros Q4"
+          price="₱350"
+          description="The ROCKBROS Smart Bike Brake & Tail Light Q4 is perfect for your daily ride. It shows other road users you and your bike clearly from behind and lights up brighter when you brake—signalling to drivers and other road users of your braking intentions.
+"
+          images={[rockbros, rockbros1, rockbros2, rockbros3, rockbros4]}
           specs={[
-            { name: "Weight", value: "328 g" },
-            { name: "Water Resistance", value: "IPX7" },
-            { name: "Cleat Type", value: "SPD-SL" },
-            { name: "Q-Factor", value: "53 mm" },
-            { name: "Stack Height", value: "12.2 mm" },
-          ]} colors={[]}        />
+            { name: "Weight", value: "23 g" },
+            { name: "Water Resistance", value: "IPX6" },
+            { name: "Modes", value: "red slow flashing / red/blue/purple breathing / red/blue/purple flash / red constant" },
+            { name: "Light Modes", value: "low / medium / high" },
+            { name: "Battery Life", value: "About 2000 mAh" },
+          ]}
+          colors={[]}
+        />
 
         {/* Suggested items */}
         <Box mt={4}>
@@ -45,20 +57,6 @@ function GarminRallyRS100() {
           </Typography>
 
           <Box display="flex" flexWrap="wrap" gap={2} justifyContent="center">
-            <AccItemDisplayTemplate
-              name="Garmin Edge 1040 Solar"
-              price="₱47,080"
-              image1={speed}
-              image2={speed1}
-              navigateTo="/GarminEdge1040Solar"
-            />
-            <AccItemDisplayTemplate
-              name="Rockbros Q4"
-              price="₱350"
-              image1={rockbros}
-              image2={rockbros1}
-              navigateTo="/RockbrosQ4"
-            />
             <AccItemDisplayTemplate
               name="Rockbros 1000 Lumens"
               price="₱1,100"
@@ -80,6 +78,20 @@ function GarminRallyRS100() {
               image2={bt1}
               navigateTo="/ENVECompositeBarTape"
             />
+            <AccItemDisplayTemplate
+              name="RockShox Rear Coil Super Deluxe RCT"
+              price="₱35,100"
+              image1={rs}
+              image2={rs1}
+              navigateTo="/RockShoxRearCoilSuperDeluxeRCT"
+            />
+            <AccItemDisplayTemplate
+              name="Fox Factory 40 Triple Crown"
+              price="₱102,100"
+              image1={fox}
+              image2={fox1}
+              navigateTo="/FoxFactory40TripleCrown"
+            />
           </Box>
         </Box>
       </Box>
@@ -89,4 +101,4 @@ function GarminRallyRS100() {
   );
 }
 
-export default GarminRallyRS100;
+export default Q4;

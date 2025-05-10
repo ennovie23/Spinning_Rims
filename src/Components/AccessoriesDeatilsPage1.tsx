@@ -11,7 +11,6 @@ type AccessoriesDetailsPageProps = {
   images: string[];
   specs: { name: string; value: string }[];
   colors: string[];
-  sizes: string[];
 };
 
 const AccessoriesDetailsPage = ({
@@ -21,11 +20,9 @@ const AccessoriesDetailsPage = ({
   images,
   specs,
   colors,
-  sizes,
 }: AccessoriesDetailsPageProps) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [selectedSize, setSelectedSize] = useState<string | null>(null);
 
   const nextImage = () => {
     setCurrentImage((prev) => (prev + 1) % images.length);
@@ -39,9 +36,6 @@ const AccessoriesDetailsPage = ({
     setSelectedColor((prev) => (prev === color ? null : color));
   };
 
-  const toggleSize = (size: string) => {
-    setSelectedSize((prev) => (prev === size ? null : size));
-  };
 
   return (
     <Box display="flex" alignItems="flex-start" justifyContent="center" gap={4} p={0} paddingTop={20}>
@@ -126,7 +120,7 @@ const AccessoriesDetailsPage = ({
         <Typography variant="body1" mt={2}>{description}</Typography>
 
         {/* Color Selector */}
-        <Typography variant="h6" mt={3} fontWeight="bold">Color:</Typography>
+        <Typography variant="h6" mt={3} fontWeight="bold"></Typography>
         <Box display="flex" gap={2} marginTop={2}>
           {colors.map((color, index) => (
             <Box
@@ -144,32 +138,6 @@ const AccessoriesDetailsPage = ({
             />
           ))}
         </Box>
-
-        {/* Size Selector */}
-        <Typography variant="h6" mt={3} fontWeight="bold">
-            Size:
-          </Typography>
-          <Box display="flex" gap={2} flexWrap="wrap">
-            {sizes.map((size, index) => (
-              <Button
-                key={index}
-                variant="contained"
-                onClick={() => toggleSize(size)}
-                sx={{
-                  backgroundColor: selectedSize === size ? "black" : "#D3D3D3",
-                  color: selectedSize === size ? "white" : "black",
-                  fontWeight: "bold",
-                  "&:hover": {
-                    backgroundColor: selectedSize === size ? "#333" : "#B0B0B0",
-                  },
-                  padding: "12px 20px", // Increased padding for a wider button
-                  minWidth: "100px", // Ensures a wider button
-                }}
-              >
-                {size}
-              </Button>
-            ))}
-          </Box>
 
         {/* Specs Table */}
         <Box mt={5} width="100%">

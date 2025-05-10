@@ -14,11 +14,15 @@ import jer1 from "../Components/Images/accessories/jer1.jpg";
 import rockbros from "../Components/Images/accessories/rockbros.png";
 import rockbros1 from "../Components/Images/accessories/rockbros1.png";
 import speed from "../Components/Images/accessories/speed.jpg";
-import speed1 from "../Components/Images/accessories/speed2.jpg";
+import speed1 from "../Components/Images/accessories/speed1.jpg";
+import speed2 from "../Components/Images/accessories/speed2.jpg";
 import bt from "../Components/Images/accessories/bt.jpg";
 import bt1 from "../Components/Images/accessories/bt1.jpg";
+import rs from "../Components/Images/accessories/rs.jpg";
+import rs1 from "../Components/Images/accessories/rs1.jpg";
 
-function GarminRallyRS100() {
+
+function GarminEdge() {
   return (
     <Box mt={1} mb={1}>
       <Header />
@@ -26,16 +30,16 @@ function GarminRallyRS100() {
       {/* Main content with margin */}
       <Box maxWidth="1500px" mx="auto" px={2}>
         <AccessoriesDetailsPage
-          name="Garmin Rally RS 100"
-          price="₱39,950"
-          description="Rally RS100 is tested to the extreme, so you can ride there too. This single-sensing power meter delivers reliable power measurements and is easy to transfer between bikes no matter what bike you’re on or where you’re riding. Compatible with shimano SPD-SL cleats"
-          images={[cleats, cleats1, cleats2]}
+          name="Garmin Edge 1040 Solar"
+          price="₱47,080"
+          description="Never stop cycling with the ultimate solar powered GPS bike computer you can depend on when you need it most. Has cutting edge technology to track yiur fitness. Edge 1040 Solar is ready for any ride, from remote gravel trails to epic climbs."
+          images={[speed, speed1, speed2]}
           specs={[
-            { name: "Weight", value: "328 g" },
-            { name: "Water Resistance", value: "IPX7" },
-            { name: "Cleat Type", value: "SPD-SL" },
-            { name: "Q-Factor", value: "53 mm" },
-            { name: "Stack Height", value: "12.2 mm" },
+            { name: "Weight", value: "4.7 oz (133 g)" },
+            { name: "Water Resistance", value: "IPX71" },
+            { name: "GPS", value: "Preloaded Garmin cycle map" },
+            { name: "External Memory Storage", value: "64 GB internal memory only" },
+            { name: "Battery Life", value: "45 Hours" },
           ]} colors={[]}        />
 
         {/* Suggested items */}
@@ -45,13 +49,6 @@ function GarminRallyRS100() {
           </Typography>
 
           <Box display="flex" flexWrap="wrap" gap={2} justifyContent="center">
-            <AccItemDisplayTemplate
-              name="Garmin Edge 1040 Solar"
-              price="₱47,080"
-              image1={speed}
-              image2={speed1}
-              navigateTo="/GarminEdge1040Solar"
-            />
             <AccItemDisplayTemplate
               name="Rockbros Q4"
               price="₱350"
@@ -80,6 +77,13 @@ function GarminRallyRS100() {
               image2={bt1}
               navigateTo="/ENVECompositeBarTape"
             />
+            <AccItemDisplayTemplate
+              name="RockShox Rear Coil Super Deluxe RCT"
+              price="₱35,100"
+              image1={rs}
+              image2={rs1}
+              navigateTo="/RockShoxRearCoilSuperDeluxeRCT"
+            />
           </Box>
         </Box>
       </Box>
@@ -89,4 +93,4 @@ function GarminRallyRS100() {
   );
 }
 
-export default GarminRallyRS100;
+export default GarminEdge;

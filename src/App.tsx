@@ -60,6 +60,15 @@ import ScottGenius from "./Pages/ScottGenius910";
 import ScottSpark970 from "./Pages/ScottSpark970";
 import SWorksStump from "./Pages/S-WorksStumpjumper";
 import SWorksEnduro from "./Pages/S-WorksEnduroLTD";
+import GarminEdge from "./Pages/GarminEdge1040Solar";
+import Q4 from "./Pages/RockbrosQ4";
+import Lumens from "./Pages/Rockbros1000Lumens";
+import GCN from "./Pages/GCNCore2.0";
+import ENVE from "./Pages/ENVECompositeBarTape";
+import RCT from "./Pages/RockShoxRearCoilSuperDeluxeRCT";
+import FOX from "./Pages/FoxFactory40TripleCrown";
+import RC from "./Pages/ShimanoRC3";
+import SP from "./Pages/BlackIncSeatpost";
 
 function App() {
   return (
@@ -127,6 +136,15 @@ function App() {
         <Route path="/ScottSpark970" element={<ScottSpark970  />} />
         <Route path="/S-WorksStumpjumper" element={<SWorksStump  />} />
         <Route path="/S-WorksEnduroLTD" element={<SWorksEnduro  />} />
+        <Route path="/GarminEdge1040Solar" element={<GarminEdge  />} />
+        <Route path="/RockbrosQ4" element={<Q4  />} />
+        <Route path="/Rockbros1000Lumens" element={<Lumens  />} />
+        <Route path="/GCNCore2.0" element={<GCN  />} />
+        <Route path="/ENVECompositeBarTape" element={<ENVE  />} />
+        <Route path="/RockShoxRearCoilSuperDeluxeRCT" element={<RCT  />} />
+        <Route path="/FoxFactory40TripleCrown" element={<FOX  />} />
+        <Route path="/ShimanoRC3" element={<RC  />} />
+        <Route path="/BlackIncSeatpost" element={<SP  />} />
 
       </Routes>
     </Router>
