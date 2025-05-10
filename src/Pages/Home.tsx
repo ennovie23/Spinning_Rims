@@ -96,6 +96,7 @@ function Home() {
           price="₱39,950"
           image1={cleats}
           image2={cleats1}
+          navigateTo="/GarminRallyRS100"
         />
 
         <AccItemDisplayTemplate
@@ -103,6 +104,7 @@ function Home() {
           price="₱47,080"
           image1={speed}
           image2={speed1}
+          navigateTo="/GarminEdge1040Solar"
         />
 
         <AccItemDisplayTemplate
@@ -110,6 +112,7 @@ function Home() {
           price="₱350"
           image1={rockbros}
           image2={rockbros1}
+          navigateTo="/RockbrosQ4"
         />
 
         <AccItemDisplayTemplate
@@ -117,6 +120,7 @@ function Home() {
           price="₱1,100"
           image1={flight}
           image2={flight1}
+          navigateTo="/Rockbros1000Lumens"
         />
 
         <AccItemDisplayTemplate
@@ -124,6 +128,7 @@ function Home() {
           price="₱5,600"
           image1={jer}
           image2={jer1}
+          navigateTo="/GCNCore2.0"
         />
       </Box>
 

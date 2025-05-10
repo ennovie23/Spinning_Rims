@@ -112,302 +112,314 @@ function MainBikePage() {
           name="Giant TCR Advanced 3"
           price="₱83,400"
           image={rb1}
+          navigateTo="/GiantTCRAdvanced3"
           // navigateTo="/Home" {example of navigating to its page}
         />
         <BikeItemDisplayTemplate
           name="Giant Propel Advanced Pro"
           price="₱123,000"
           image={rb2}
+          navigateTo="/GiantPropelAdvancedPro"
         />
 
         <BikeItemDisplayTemplate
           name="Canyon Aeroad CF SLX"
           price="₱326,550"
           image={rb3}
+          navigateTo="/CanyonAeroadCFSLX"
         />
 
         <BikeItemDisplayTemplate
           name="Canyon Ultimate CF SL"
           price="₱192,450"
           image={rb4}
+          navigateTo="/CanyonUltimateCFSL"
         />
 
         <BikeItemDisplayTemplate
           name="S - Works Tarmac SL7"
           price="₱235,000"
           image={rb5}
+          navigateTo="/S-worksTarmacSL7"
         />
 
         <BikeItemDisplayTemplate
           name="Specialized Allez Sprint Comp"
           price="₱113,480"
           image={rb6}
+          navigateTo="/SpecializedAllezSprintComp"
         />
 
         <BikeItemDisplayTemplate
           name="Pinarello F5 105"
           price="₱355,750"
           image={rb7}
+          navigateTo="/PinarelloF5105"
         />
 
         <BikeItemDisplayTemplate
           name="Pinarello Paris 105"
           price="₱320,600"
           image={rb8}
+          navigateTo="/PinarelloParis105"
         />
 
         <BikeItemDisplayTemplate
           name="Cervelo Soloist"
           price="₱290,000"
           image={rb9}
+          navigateTo="/CerveloSoloist"
         />
 
         <BikeItemDisplayTemplate
           name="Cervelo Caledonia"
           price="₱260,000"
           image={rb10}
+          navigateTo="/CerveloCaledonia"
         />
 
         <BikeItemDisplayTemplate
           name="Trek Marlin 5"
           price="₱29,490"
           image={mtb1}
+          navigateTo="/TrekMarlin5"
         />
-
         <BikeItemDisplayTemplate
           name="Trek Marlin 7"
           price="₱47,490"
           image={mtb2}
           navigateTo="/TrekMarlin7"
         />
-
         <BikeItemDisplayTemplate
           name="Scott Scale 925"
-          price="₱ 45,000"
+          price="₱45,000"
           image={mtb3}
           navigateTo="/ScottScale925"
         />
-
         <BikeItemDisplayTemplate
           name="Scott Scale RC World Cup"
           price="₱270,000"
           image={mtb4}
+          navigateTo="/ScottScaleRCWorldCup"
         />
-
         <BikeItemDisplayTemplate
           name="Cube Aim SLX"
           price="₱42,180"
           image={mtb5}
+          navigateTo="/CubeAimSLX"
         />
-
         <BikeItemDisplayTemplate
           name="Cube Attention SL"
           price="₱60,420"
           image={mtb6}
+          navigateTo="/CubeAttentionSL"
         />
-
         <BikeItemDisplayTemplate
           name="Cannondale F - Si Carbon 5"
           price="₱145,000"
           image={mtb7}
+          navigateTo="/CannondaleF-SiCarbon"
         />
-
         <BikeItemDisplayTemplate
           name="Cannondale Scalpel HT Carbon 2"
           price="₱265,400"
           image={mtb8}
+          navigateTo="/CannondaleScalpelHTCarbon2"
         />
-
         <BikeItemDisplayTemplate
           name="Santa Cruz High Ball C R"
           price="₱200,400"
           image={mtb9}
+          navigateTo="/SantaCruzHighBallCR"
         />
-
         <BikeItemDisplayTemplate
           name="Santa Cruz Chameleon R MX"
           price="₱200,400"
           image={mtb10}
+          navigateTo="/SantaCruzChameleonRMX"
         />
 
         <BikeItemDisplayTemplate
           name="Canyon Grail 7 SL"
           price="₱165,000"
           image={gb1}
+          navigateTo="/CanyonGrail7SL"
         />
-
         <BikeItemDisplayTemplate
           name="Canyon Grail CF SL 7"
           price="₱229,000"
           image={gb2}
+          navigateTo="/CanyonGrailCFSL7"
         />
-
         <BikeItemDisplayTemplate
           name="Cube Nuroad Race FE"
           price="₱120,000"
           image={gb3}
+          navigateTo="/CubeNuroadRaceFE"
         />
-
         <BikeItemDisplayTemplate
           name="Cube Nuroad C:62 Pro"
           price="₱250,500"
           image={gb4}
+          navigateTo="/CubeNuroadC62Pro"
         />
-
         <BikeItemDisplayTemplate
           name="Giant Revolt X Advanced Pro 2"
           price="₱75,000"
           image={gb5}
+          navigateTo="/GiantRevoltXAdvancedPro2"
         />
-
         <BikeItemDisplayTemplate
-          name="Giant Revolt 2 "
+          name="Giant Revolt 2"
           price="₱75,000"
           image={gb6}
+          navigateTo="/GiantRevolt2"
         />
-
         <BikeItemDisplayTemplate
           name="Cervelo Aspero"
           price="₱500,000"
           image={gb7}
+          navigateTo="/CerveloAspero"
         />
-
         <BikeItemDisplayTemplate
           name="Cervelo Aspero Rival XPLRS"
           price="₱399,000"
           image={gb8}
+          navigateTo="/CerveloAsperoRivalXPLRS"
         />
-
         <BikeItemDisplayTemplate
           name="Pinarello Grevil F grx810"
           price="₱399,000"
           image={gb9}
+          navigateTo="/PinarelloGrevilFgrx810"
         />
-
         <BikeItemDisplayTemplate
           name="S - Works Crux"
           price="₱700,000"
           image={gb10}
+          navigateTo="/S-worksCrux"
         />
 
-        <BikeItemDisplayTemplate
-          name="Trek Rail 9"
-          price="₱500,000"
-          image={eb1}
+        <BikeItemDisplayTemplate 
+        name="Trek Rail 9" 
+        price="₱500,000" 
+        image={eb1} 
+        navigateTo="/TrekRail9"
         />
-
-        <BikeItemDisplayTemplate
-          name="Trek Marlin+ 6d"
-          price="₱200,000"
-          image={eb2}
+        <BikeItemDisplayTemplate 
+        name="Trek Marlin+ 6d" 
+        price="₱200,000" 
+        image={eb2} 
+        navigateTo="/TrekMarlin6d"
         />
-
-        <BikeItemDisplayTemplate
-          name="Trek Powerfly 7"
-          price="₱200,000"
-          image={eb3}
+        <BikeItemDisplayTemplate 
+        name="Trek Powerfly 7" 
+        price="₱200,000" 
+        image={eb3} 
+        navigateTo="/TrekPowerfly7"
         />
-
-        <BikeItemDisplayTemplate
-          name="Cube Kathmandu Hybrid"
-          price="₱350,000"
-          image={eb4}
+        <BikeItemDisplayTemplate 
+        name="Cube Kathmandu Hybrid" 
+        price="₱350,000" 
+        image={eb4} 
+        navigateTo="/CubeKathmanduHybrid"
         />
-
-        <BikeItemDisplayTemplate
-          name="Cube Reaction"
-          price="₱200,000"
-          image={eb5}
+        <BikeItemDisplayTemplate 
+        name="Cube Reaction" 
+        price="₱200,000" 
+        image={eb5} 
+        navigateTo="/CubeReaction"
         />
-
-        <BikeItemDisplayTemplate
-          name="Cube Stereo Hybrid"
-          price="₱300,000"
-          image={eb6}
+        <BikeItemDisplayTemplate 
+        name="Cube Stereo Hybrid" 
+        price="₱300,000" 
+        image={eb6} 
+        navigateTo="/CubeStereoHybrid"
         />
-
-        <BikeItemDisplayTemplate
-          name="Scott Contessa eRide"
-          price="₱350,000"
-          image={eb7}
+        <BikeItemDisplayTemplate 
+        name="Scott Contessa eRide" 
+        price="₱350,000" 
+        image={eb7} 
+        navigateTo="/ScottContessaeRide"
         />
-
-        <BikeItemDisplayTemplate
-          name="Scott Strike"
-          price="₱350,000"
-          image={eb8}
+        <BikeItemDisplayTemplate 
+        name="Scott Strike" 
+        price="₱350,000" 
+        image={eb8} 
+        navigateTo="/ScottStrike"
         />
-
-        <BikeItemDisplayTemplate
-          name="Scott Aspect"
-          price="₱200,000"
-          image={eb9}
+        <BikeItemDisplayTemplate 
+        name="Scott Aspect" 
+        price="₱200,000" 
+        image={eb9} 
+        navigateTo="/ScottAspect"
         />
-
-        <BikeItemDisplayTemplate
-          name="Giant Trance X Advanced e+"
-          price="₱800,000"
-          image={eb10}
+        <BikeItemDisplayTemplate 
+        name="Giant Trance X Advanced e+" 
+        price="₱800,000" 
+        image={eb10} 
+        navigateTo="/GiantTranceXAdvanced"
         />
 
         <BikeItemDisplayTemplate
           name="Cube Stereo HPC"
           price="₱500,000"
           image={fsb1}
+          navigateTo="/CubeStereoHPC"
         />
-
         <BikeItemDisplayTemplate
           name="Cube AMS"
           price="₱350,000"
           image={fsb2}
+          navigateTo="/CubeAMS"
         />
-
         <BikeItemDisplayTemplate
           name="Trek Fuel EX 9.8 GX"
           price="₱350,000"
           image={fsb3}
+          navigateTo="/TrekFuelEX9.8GX"
         />
-
         <BikeItemDisplayTemplate
           name="Trek Supercaliber 9.7"
           price="₱400,000"
           image={fsb4}
+          navigateTo="/TrekSupercaliber9.7"
         />
-
         <BikeItemDisplayTemplate
           name="Santa Cruz Blur CS"
           price="₱400,000"
           image={fsb5}
+          navigateTo="/SantaCruzBlurCS"
         />
-
         <BikeItemDisplayTemplate
           name="Santa Cruz Mega Tower 2"
           price="₱380,000"
           image={fsb6}
+          navigateTo="/SantaCruzMegaTower2"
         />
-
         <BikeItemDisplayTemplate
           name="Scott Genius 910"
           price="₱380,000"
           image={fsb7}
+          navigateTo="/ScottGenius910"
         />
-
         <BikeItemDisplayTemplate
-          name="Scott Park 970"
+          name="Scott Spark 970"
           price="₱180,000"
           image={fsb8}
+          navigateTo="/ScottSpark970"
         />
-
         <BikeItemDisplayTemplate
           name="S - Works Stumpjumper"
           price="₱680,000"
           image={fsb9}
+          navigateTo="/S-WorksStumpjumper"
         />
-
         <BikeItemDisplayTemplate
-          name="S - Works Ennduro LTD"
+          name="S - Works Enduro LTD"
           price="₱700,000"
           image={fsb10}
+          navigateTo="/S-WorksEnduroLTD"
         />
       </Box>
 
