@@ -71,6 +71,7 @@ import RC from "./Pages/ShimanoRC3";
 import SP from "./Pages/BlackIncSeatpost";
 
 function App() {
+  alert("3 out of 5 members from our group contributed to this project.\n\nContributors:\n- Evangelista, Ennovie\n- Uy, Felix Martin\n- Chua, Kenjie");
   return (
     <Router>
       <Routes>
@@ -145,7 +146,6 @@ function App() {
         <Route path="/FoxFactory40TripleCrown" element={<FOX  />} />
         <Route path="/ShimanoRC3" element={<RC  />} />
         <Route path="/BlackIncSeatpost" element={<SP  />} />
-
       </Routes>
     </Router>
   );
